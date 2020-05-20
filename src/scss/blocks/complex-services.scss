@@ -1,0 +1,123 @@
+.complex-services {
+	h2.title {
+		font-size: 30px;
+		font-weight: 700;
+		margin-bottom: 60px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-blue;
+		@media (max-width: 768px) {
+			font-size: 20px;
+		}
+	}
+}
+
+.complex-services__picture--right {
+	width: 250px;
+	padding-left: 20px;
+	order: 1;
+	flex: 1 0 auto;
+	position: relative;
+	.alt {
+		position: absolute;
+		padding: 20px;
+		font-size: 22px;
+		font-weight: 700;
+		color: $color-blue;
+		top: -40px;
+		right: 70%;
+		background-color: $color-white;
+		white-space: nowrap;
+		box-shadow: 0 0 10px #ccc;
+		z-index: 10;
+		text-overflow: ellipsis;
+		&::after {
+			content: "";
+			position: absolute;
+			right: 20px;
+			bottom: -20px;
+			border: 10px solid transparent;
+			border-top: 10px solid white;
+			z-index: 10;
+		}
+		@media (max-width: 768px) {
+			left: -10px;
+			right: auto;
+			width: calc(100% + 20px);
+			font-size: 18px;
+			overflow: hidden;
+		}
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+		padding-left: 0;
+		order: 0;
+		margin-bottom: 10px;
+	}
+}
+
+.complex-services__picture--left {
+	width: 250px;
+	padding-right: 20px;
+	flex: 1 0 auto;
+	position: relative;
+	.alt {
+		position: absolute;
+		padding: 20px;
+		font-size: 22px;
+		font-weight: 700;
+		color: $color-blue;
+		top: -40px;
+		left: 75%;
+		background-color: $color-white;
+		white-space: nowrap;
+		box-shadow: 0 0 10px #ccc;
+		z-index: 10;
+		text-overflow: ellipsis;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 20px;
+			bottom: -20px;
+			border: 10px solid transparent;
+			border-top: 10px solid white;
+			z-index: 10;
+		}
+		@media (max-width: 768px) {
+			left: -10px;
+			width: calc(100% + 20px);
+			font-size: 18px;
+			overflow: hidden;
+		}
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 10px;
+	}
+}
+
+.complex-services__row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	&:last-child {
+		@media (max-width: 768px) {
+			margin-bottom: 0;
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+		margin-bottom: 65px;
+	}
+}
+
+.complex-services__text {
+	p {
+		font-size: 18px;
+		font-weight: 400;
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@import "stylesheet.css";
+@import "../../node_modules/normalize.scss/normalize.scss";
+// @import "../fonts/stylesheet.scss";
+@import "variables.scss";
+@import "base.scss";
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/complex-description";
+@import "blocks/complex-advantages";
+@import "blocks/complex-about";
+@import "blocks/complex-services";
+@import "blocks/complex-request";
+@import "blocks/burger";
+@import "blocks/mobile-menu";

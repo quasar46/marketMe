@@ -1,0 +1,30 @@
+.mobile-menu {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	padding: 20px;
+	width: 100%;
+	height: auto;
+	background-color: $color-white;
+	z-index: 100;
+	transition: 0.4s;
+	&.active {
+		top: 98px;
+		transition: 0.4s;
+	}
+}
+
+.mobile-menu__wrapper {
+	ul {
+		display: flex;
+		flex-direction: column;
+		li {
+			margin-bottom: 8px;
+		}
+		a {
+			font-size: 13px;
+			color: $color-blue;
+			text-decoration: none;
+		}
+	}
+}

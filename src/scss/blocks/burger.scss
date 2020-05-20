@@ -1,0 +1,16 @@
+.burger {
+	display: none;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	background-image: url("../images/svg/burger.svg");
+	background-repeat: no-repeat;
+	z-index: 110;
+	&.active {
+		background-image: url("../images/svg/burger-active.svg");
+		background-repeat: no-repeat;
+	}
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
