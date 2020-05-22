@@ -1,0 +1,112 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				h1.visually-hidden Агенство антикризисного маркетинга
+
+				section.design
+					.design-services
+						.container
+							h1.title Дизайн
+							.design-services__wrapper
+								.design-services__col
+									h2.title Наши услуги в области дизайна
+									ul.design-services__list
+										li Разработка логотипа
+										li Разработка фирменного стиля
+										li Разработка дизайна упаковки продукции
+										li Дизайн корпоративных презентаций
+										li Графический дизайн любой сложности
+										li Бренд-бук
+										li Web-дизайн
+										li Иллюстрации
+										li Тематические рендеры
+										li Креативный дизайн
+								.design-services__col
+									img(src="images/pictures/design/1.jpg" alt="")
+
+					.design-grow
+						.container
+							h2.title Хороший дизайн помогает продавать
+							// star
+							.design-grow__star
+								.design-grow__picture
+
+								ul.design-grow__list
+									li
+										picture
+											source(media="(max-width: 768px)" srcset="images/pictures/design/2mob.jpg")
+											img(src="images/pictures/design/2.jpg")
+										p Знакомство с товаром или услугой начинается с визуального контакта с их рекламой. Если это знакомство приятное, то человеку проще довериться такой компании и стать ее клиентом
+									li
+										picture
+											source(media="(max-width: 768px)" srcset="images/pictures/design/3mob.jpg")
+											img(src="images/pictures/design/3.jpg")
+										p Стильный и интуитивно понятный дизайн демонстрирует заботу о клиенте и уважение к нему. Часто бывает, что человек принимает решение о сотрудничестве с определенной компанией только потому, что ему нравится, как у нее оформлен сайт или визитки
+									li
+										picture
+											source(media="(max-width: 768px)" srcset="images/pictures/design/4mob.jpg")
+											img(src="images/pictures/design/4.jpg")
+										p Дизайн не зря называют «посланником бренда». Это важная имиджевая составляющая, которая формирует цельный образ компании на разных носителях информации
+
+					.design-develop
+						.container
+							h2.title КАК МЫ РАЗРАБАТЫВАЕМ ДИЗАЙН
+							ol.design-develop__list
+								li
+									.design-develop__picture
+										img(src="images/pictures/design/5.jpg" alt="")
+									p Сначала мы тщательноизучаем детали вашего бизнеса, его отличительные особенности, текущую стратегию продвижения, целевую аудиторию. Фокусируемся на потребностях конечного потребителя
+								li
+									.design-develop__picture
+										img(src="images/pictures/design/6.jpg" alt="")
+									p Затем готовим  техническое задание,  чтобы обозначить цели дизайна.  Определяем какие элементы способны улучшить продвижение и принести вам большее  число клиентов
+								li
+									.design-develop__picture
+										img(src="images/pictures/design/7.jpg" alt="")
+									p Создаем дизайн-макет. Демонстрируеми согласовываем дизайн-макет с вами. Быстро вносим правки, если это необходимо
+								li
+									.design-develop__picture
+										img(src="images/pictures/design/8.jpg" alt="")
+									p Наши дизайнеры  помогут вам создать  осмысленный и  легкоузнаваемый бренд, который будет продавать
+							.button
+								a(href="portfolio.html") Смотреть портфолио
+
+					.complex-request
+						.container
+							.complex-request__wrapper
+								.complex-request__inner
+									h3.title Оставьте заявку и мы свяжемся с вами в ближайшее время
+									form.complex-request__form
+										.complex-request__inputs
+											label(for="input-name") 
+												span Ваше имя*
+												input(type="text" id="input-name")
+											label(for="input-tel") 
+												span Ваш телефон*
+												input(type="tel" id="input-tel")
+
+										.complex-request__consent
+											input(type="checkbox" id="consent")
+											label(for="consent") Я даю согласие на обработку персональных данных и соглашаюсь с <a href="">политикой конфиденциальности</a>
+
+										.complex-request__button
+											input(type="submit" value="Связаться со специалистом")
+
+
+
+
+
+
+
+
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

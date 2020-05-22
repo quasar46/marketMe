@@ -1,0 +1,75 @@
+.design-services {
+	margin-bottom: 70px;
+	h1.title {
+		font-size: 30px;
+		font-weight: 700;
+		color: $color-blue;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 70px;
+		@media (max-width: 768px) {
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+	}
+	@media (max-width: 768px) {
+		margin-bottom: 20px;
+	}
+}
+
+.design-services__wrapper {
+	display: flex;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.design-services__col {
+	width: 50%;
+	h2.title {
+		font-family: $font-add;
+		font-size: 30px;
+		font-weight: 700;
+		color: $color-blue;
+		margin-bottom: 20px;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	&:first-child {
+		@media (max-width: 768px) {
+			order: 1;
+		}
+	}
+	&:nth-child(2) {
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.design-services__list {
+	line-height: 1.5;
+	li {
+		position: relative;
+		padding-left: 20px;
+		font-size: 24px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 6px;
+			height: 12px;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-image: url(../images/svg/arrow-triangle.svg);
+		}
+		@media (max-width: 768px) {
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+	}
+}

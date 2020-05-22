@@ -1,5 +1,6 @@
 .complex-services {
 	h2.title {
+		font-family: $font-add;
 		font-size: 30px;
 		font-weight: 700;
 		margin-bottom: 60px;
@@ -19,6 +20,7 @@
 	flex: 1 0 auto;
 	position: relative;
 	.alt {
+		font-family: $font-add;
 		position: absolute;
 		padding: 20px;
 		font-size: 22px;
@@ -31,21 +33,35 @@
 		box-shadow: 0 0 10px #ccc;
 		z-index: 10;
 		text-overflow: ellipsis;
+		white-space: nowrap;
 		&::after {
 			content: "";
 			position: absolute;
-			right: 20px;
 			bottom: -20px;
-			border: 10px solid transparent;
-			border-top: 10px solid white;
+			border: 30px solid transparent;
+			border-top: 30px solid #fff;
 			z-index: 10;
+			right: -10px;
+			transform: rotate(225deg);
+			@media (max-width: 768px) {
+				left: -5px;
+				right: auto;
+				transform: rotate(135deg);
+				border: 20px solid transparent;
+				border-top: 20px solid #fff;
+				box-shadow: 0 -7px 5px -4px #58595b3d;
+			}
 		}
 		@media (max-width: 768px) {
 			left: -10px;
 			right: auto;
-			width: calc(100% + 20px);
+			width: auto;
 			font-size: 18px;
-			overflow: hidden;
+			padding: 10px;
+			padding-left: 20px;
+			white-space: normal;
+			top: 0;
+			transform: translateY(-100%);
 		}
 	}
 	@media (max-width: 768px) {
@@ -62,32 +78,44 @@
 	flex: 1 0 auto;
 	position: relative;
 	.alt {
+		font-family: $font-add;
 		position: absolute;
-		padding: 20px;
+		padding: 15px;
 		font-size: 22px;
 		font-weight: 700;
 		color: $color-blue;
 		top: -40px;
 		left: 75%;
 		background-color: $color-white;
-		white-space: nowrap;
 		box-shadow: 0 0 10px #ccc;
 		z-index: 10;
 		text-overflow: ellipsis;
+		white-space: nowrap;
 		&::after {
 			content: "";
 			position: absolute;
-			left: 20px;
 			bottom: -20px;
-			border: 10px solid transparent;
-			border-top: 10px solid white;
+			border: 30px solid transparent;
+			border-top: 30px solid #fff;
 			z-index: 10;
+			left: -10px;
+			transform: rotate(135deg);
+			@media (max-width: 768px) {
+				border: 20px solid transparent;
+				border-top: 20px solid #fff;
+				left: -5px;
+				box-shadow: 0 -7px 5px -4px #58595b3d;
+			}
 		}
 		@media (max-width: 768px) {
 			left: -10px;
-			width: calc(100% + 20px);
+			width: auto;
 			font-size: 18px;
-			overflow: hidden;
+			white-space: normal;
+			padding: 10px;
+			padding-left: 20px;
+			top: 0;
+			transform: translateY(-100%);
 		}
 	}
 	@media (max-width: 768px) {

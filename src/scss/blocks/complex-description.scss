@@ -36,6 +36,7 @@
 }
 
 .complex-description__title {
+	font-family: $font-add;
 	font-size: 25px;
 	font-weight: 700;
 	color: $color-blue;
@@ -49,7 +50,8 @@
 .complex-description__text {
 	p {
 		color: $color-text;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+		line-height: 1;
 		@media (max-width: 768px) {
 			font-size: 14px;
 		}
