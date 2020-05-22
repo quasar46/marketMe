@@ -1,0 +1,49 @@
+.contacts-call__wrapper {
+	display: flex;
+	h2.title {
+		font-size: 25px;
+		font-weight: 700;
+		color: $color-blue;
+		text-transform: uppercase;
+		padding-left: 90px;
+		background-image: url("../images/svg/tell-gradient.svg");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 34px 40px;
+		line-height: 40px;
+		@media (max-width: 768px) {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.contacts-call__phones {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts-call__phones {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 60px;
+	a {
+		text-decoration: none;
+		color: $color-text;
+		font-size: 60px;
+		&:hover {
+			color: $color-green;
+		}
+		@media (max-width: 768px) {
+			font-size: 35px;
+		}
+	}
+	@media (max-width: 768px) {
+		align-items: flex-start;
+	}
+}

@@ -1,10 +1,22 @@
 header {
-	border-bottom: 2px solid $color-blue;
+	// border-bottom: 2px solid $color-blue;
+	position: relative;
 	margin-bottom: 70px;
 	position: relative;
 	@media (max-width: 768px) {
 		margin-bottom: 30px;
 	}
+}
+
+.header__gradient {
+	position: absolute;
+	background-image: url("../images/svg/line-gradient.svg");
+	background-size: cover;
+	background-repeat: repeat;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 .header {
@@ -18,17 +30,20 @@ header {
 }
 
 .header__logo {
-	width: 213px;
+	width: 135px;
+	flex: 1 0 auto;
 	@media (max-width: 768px) {
-		width: 119px;
+		width: 74px;
+		flex: 0 1 auto;
 	}
 }
 
 .header__menu {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	li {
 		margin-right: 30px;
 		a {
@@ -49,6 +64,7 @@ header {
 .header__contacts {
 	display: flex;
 	flex-direction: column;
+	flex: 1 0 auto;
 	li {
 		display: flex;
 		flex-direction: column;

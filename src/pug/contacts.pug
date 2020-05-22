@@ -1,0 +1,65 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				h1.visually-hidden Контакты
+
+				// section contacts
+				section.contacts
+
+					// write
+					.contacts-write.container
+						h2.title Напишите нам
+						.contacts-write__form
+							// form
+							form(action="get")
+								.contacts-write__top
+									.contacts-write__inputs
+										label(for="name") 
+											span Представьтесь, пожалуйста*
+											input(type="text" id="name")
+										label(for="email") 
+											span Электронная почта*
+											input(type="text" id="email")
+										label(for="phone") Ваш телефон*
+											input(type="text" id="phone")
+									.contacts-write__textarea
+										label(for="message") 
+											span Текст сообщения
+											textarea(id="message")
+								.contacts-write__bottom
+									.contacts-write__consent
+										input(type="checkbox" id="consent") 
+										label(for="consent") 
+											span Я даю согласие на обработку персональных данных и соглашаюсь с <a href="#">политикой конфиденциальности</a>
+								.contacts-write__submit.button__gradient
+									input(type="submit" value="Отправить письмо")
+					// map
+					.contacts-map
+						.container
+							.contacts-map__wrapper
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.794522925629!2d30.250914916143277!3d59.93555168187501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630d3e79c7301%3A0x605b594663878ae2!2z0KHRgNC10LTQvdC40Lkg0L_RgNC-0YHQv9C10LrRgiDQki7Qni4sIDg4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk5MTA2!5e0!3m2!1sru!2sru!4v1590154491148!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							.contacts-map__content
+								h2.title Приезжайте
+								p 199106, Россия г. Санкт-Петербург Средний пр. В.О. дом 88, литера А БЦ «Baltis Plaza» 5 этаж, офис 501
+
+					// call
+					.contacts-call
+						.container
+							.contacts-call__wrapper
+								h2.title Звоните
+								.contacts-call__phones
+									a(href="tel:88003022728") 8 800 302 27 28
+									a(href="tel+78129091413") +7 812 909 14 13
+						
+
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug
