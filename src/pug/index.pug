@@ -7,167 +7,201 @@ html(lang="ru")
 			include modules/header.pug
 
 			main
-				h1.visually-hidden Агенство антикризисного маркетинга
+				h1.visually-hidden MarketMe B2B маркетинг
 
-				section.complex
-					.complex-description
+				section.index
+					.index-save
+						picture
+							<!--[if IE 9]><video style="display: none;"><![endif]-->
+							source(srcset="images/svg/backgrounds/save-buiznes-mobile.svg" media="(max-width: 768px)")
+							<!--[if IE 9]></video><![endif]-->
+							img(src="images/svg/backgrounds/save-buiznes.svg" alt="")
+
+					.index-calculations
+						.index-calculations__bg
+							picture
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								source(srcset="images/svg/backgrounds/calculations-mobile.svg" media="(max-width: 768px)")
+								<!--[if IE 9]></video><![endif]-->
+								img(src="images/svg/backgrounds/calculations.svg" alt="")
+
+						//- ul
+						//- 	li
+						//- 		span.title 20 лет
+						//- 		span практического<br> маркетинга
+						//- 	li
+						//- 		span.title B2B
+						//- 		span технологии
+						//- 	li
+						//- 		span.title 500%
+						//- 		span средний<br> ROMI
+						//- 	li
+						//- 		span Спасаем по
+						//- 		span.title 10 <b>бизнесов</b>
+						//- 		span в год
+						//- 	li
+						//- 		span Прирост продаж
+						//- 		span.title <b>в</b> 3 <b>раза</b>
+						//- 	li
+						//- 		span Работаем с
+						//- 		span.title 25 <b class="mode">сегментами</b>
+						//- 		span рынка
+						.index-calculations__remark
+							.container
+								span Все сейчас обсуждают организацию удаленного рабочего места, однако, все забывают о том, что надо не только ставить задачи и контролировать персонал в онлайне, но и осуществлять продажи в новом дистанционном формате
+
+					.index-questions
 						.container
-							h2.title Комплексный подход
-							.complex-description__wrapper
-								.complex-description__col
-									.complex-description__title Комплексный маркетинг — залог увеличения продаж и снижения стоимости  привлечения клиента
-									.complex-description__text
-										p Комплексный подход в маркетинге — это пазл из оптимально подобранных инструментов для продвижения бизнеса в зависимости от его специфики, сегмента, конкурентной среды, изменчивости рынка 
-										p Эти инструменты связаны между собой, и все они дополняют друг друга. При их совместном использовании возникает эффект синергии
-										p Так вы получаете эффективность, которую нельзя добиться, если использовать только один из каналов продвижения
-								.complex-description__col
-									img(src="images/pictures/1.jpg" alt="")
-					.complex-advantages
-						.container.container--mode
-							.complex-advantages__fill
-								p Комплексный маркетинг — это дешевле, чем вы думаете
+							ul
+								li Ваша компания готова привлекать клиентов в онлайн режиме?
+								li Вы знаете, какие инструменты продаж в онлайне будут наиболее быстро конвертируемыми и выгодными именно для вашего сегмента рынка и компании?
+								li Ваши менеджеры знают, какие аргументы работают в условиях кризиса? И это отнюдь не дешёвая цена!
+
+					.index-sales
 						.container
-							.complex-advantages__list
-								h3.complex-advantages__title Целостный подход позволяет сократить расходы на продвижение:
-								ul
-									li единый процесс управления кампанией по продвижению продукта
-									li единый стратегический план кампании
-									li единый бюджет кампании
+							.index-sales__wrapper
+								.index-sales__picture
+									img(src="images/pictures/sales.jpg" alt="")
+								.index-sales__content
+									span Мы настроим для вашей компании
+									span.strong быстрые и эффективные продажи в онлайн
 
-					.complex-about
-						.container
-							.complex-about__wrapper
-								.complex-about__col
-									.complex-about__picture
-										img(src="images/pictures/2.jpg" alt="")
-									h3.complex-about__title Как мы работаем:
-									ol
-										li Оцениваем бизнес в целом и выявляем «слабые» места, из-за которых вытеряете клиентов
-										li Проводим глубокий анализ рынка, конкурентной среды, компании
-										li Моделируем воронку продаж, определяем цели и задачи согласно потребностям бизнеса
-										li Готовим стратегию продвижения проекта  
-										li Проводим работы согласно стратегииразвития
-								.complex-about__col
-									.complex-about__picture
-										img(src="images/pictures/3.jpg" alt="")
-									h3.complex-about__title Что вы получаете:
-									ol
-										li Отстройку от конкурентов
-										li Укрепление позиций на рынке
-										li Рост числа постоянных покупателей
-										li Доверие целевой аудитории
-										li Снижение привлечения стоимости клиента 
-										li Увеличение продаж
-										li Защита от рыночных колебаний
-										li Повышение узнаваемости бренда
-										li Рост капитализации компании
-										li Рост среднего чека
-
-					.complex-services
-						.container
-							h2.title Услуги комплексного маркетинга
-							.complex-services__wrapper
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--left
-										img(src="images/pictures/4.jpg" alt="")
-										.alt Разработка платформы бренда
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--right
-										img(src="images/pictures/5.jpg" alt="")
-										.alt Нейминг: разработка названия бренда
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--left
-										img(src="images/pictures/6.jpg" alt="")
-										.alt Разработка визуальной идентификации бренда
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--right
-										img(src="images/pictures/7.jpg" alt="")
-										.alt Разработка коммуникационной стратегии
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--left
-										img(src="images/pictures/8.jpg" alt="")
-										.alt Разработка медиаплана
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--right
-										img(src="images/pictures/9.jpg" alt="")
-										.alt Разработка корпоративной презентации / продукта
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--left
-										img(src="images/pictures/10.jpg" alt="")
-										.alt Разработка сайта
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--right
-										img(src="images/pictures/11.jpg" alt="")
-										.alt Разработка стратегии онлайн-продвижения
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--left
-										img(src="images/pictures/12.jpg" alt="")
-										.alt Контекстная реклама
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--right
-										img(src="images/pictures/13.jpg" alt="")
-										.alt SEO
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-								.complex-services__row
-									.complex-services__picture.complex-services__picture--left
-										img(src="images/pictures/14.jpg" alt="")
-										.alt Ведение и продвижение в социальных сетях
-									.complex-services__text
-										p Готовим полный перечень отличительных характеристик бренда, на основе которых будут строиться все дальнейшие коммуникации с клиентами
-
-					.complex-request
-						.container
-							.complex-request__wrapper
-								.complex-request__inner
-									h3.title Оставьте заявку и мы свяжемся с вами в ближайшее время
-									form.complex-request__form
-										.complex-request__inputs
-											label(for="input-name") 
-												span Ваше имя*
-												input(type="text" id="input-name")
-											label(for="input-tel") 
-												span Ваш телефон*
-												input(type="tel" id="input-tel")
-
-										.complex-request__consent
-											input(type="checkbox" id="consent")
-											label(for="consent") Я даю согласие на обработку персональных данных и соглашаюсь с <a href="">политикой конфиденциальности</a>
-
-										.complex-request__button
-											input(type="submit" value="Связаться со специалистом")
+					.index-process
+						picture
+							<!--[if IE 9]><video style="display: none;"><![endif]-->
+							source(srcset="images/svg/backgrounds/process-mobile.svg" media="(max-width: 768px)")
+							<!--[if IE 9]></video><![endif]-->
+							img(src="images/svg/backgrounds/process.svg" alt="")
 
 
+					.index-actions
+						ul
+							li
+								p.index-actions__title Разработаем продающий сайт или лэндинг
+							li
+								p.index-actions__title Запустим контекстную рекламу
+							li
+								p.index-actions__title Настроим таргетированную рекламу в социальных сетях
+							li
+								p.index-actions__title Сформируем репутацию в онлайн, которая даст максимальную конверсию
+
+						.index-actions__order
+							.container
+								.index-actions__order-inner
+									span Оставьте заявку на беплатную 30-минутную онлайн консультацию
+									.btn-wrapper
+										a.btn-gradient.popup1_open#order-btn Оставить заявку
+
+					.index-slider
+						// slider
+						ul.index-slider__list.slick-slider
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider1.jpg')")
+								.index-slider__content
+									h3 PRUDOV CONSTRUCTION 
+									p Ребрендинг строительной компании с последующим внедрением и комплексным маркетинговым сопровождением на постоянной основе
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider2.jpg')")
+								.index-slider__content
+									h3 Q-Energy
+									p Комплексный ребрендинг электромонтажной компании
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider3.jpg')")
+								.index-slider__content
+									h3 Gronin Bureau
+									p Ребрендинг проектной компании «Институт строительного проектирования GEO Design»
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider4.jpg')")
+								.index-slider__content
+									h3 DP Business Club
+									p Разработка нового логотипа и фирменного стиля для «Клуба «Деловой Петербург»
+									a(href="").btn-gradient Смотреть
+
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider5.jpg')")
+								.index-slider__content
+									h3 Tornhoff
+									p Маркетинговое развитие проекта с нуля
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider6.jpg')")
+								.index-slider__content
+									h3 Научно-развлекательный комплекс 
+									p Комплексная подготовка инвестиционного проекта
+									a(href="").btn-gradient Смотреть
+
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider7.jpg')")
+								.index-slider__content
+									h3 Ligar Wood
+									p Брендинг деревообрабатывающего производства
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider8.jpg')")
+								.index-slider__content
+									h3 Telecom 5
+									p Ребрендинг компании, принадлежащей Ростелеком и Сбербанку
+									a(href="").btn-gradient Смотреть
+
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider9.jpg')")
+								.index-slider__content
+									h3 Индустриальный парк «Марьино»
+									p Формирование рекламной стратегии индустриального парка и запуск контекстной рекламы по продаже участков промышленного назначения
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider10.jpg')")
+								.index-slider__content
+									h3 Kibbler
+									p Разработка фирменного буклета по продажам
+									a(href="").btn-gradient Смотреть
+
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider11.jpg')")
+								.index-slider__content
+									h3 Smart Price
+									p Подготовка инвестиционной презентации
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider12.jpg')")
+								.index-slider__content
+									h3 Кухни
+									p Разработка лэндинга по группе товаров «кухни» для  интернет магазина дешёвой мебели
+									a(href="").btn-gradient Смотреть
+
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider13.jpg')")
+								.index-slider__content
+									h3 Адвокат Мяленков
+									p Разработка сайта адвокатского кабинета
+									a(href="").btn-gradient Смотреть
+							// item-slider
+							li.index-slider__item
+								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider14.jpg')")
+								.index-slider__content
+									h3 Bouton Shoes
+									p Репозиционирование розничных магазинов обуви премиального класса в офлайне
+									a(href="").btn-gradient Смотреть
 
 
 
 		include modules/footer.pug
+		include modules/modal-order.pug
 		//- include modules/menu-mobile.pug
 		include modules/script.pug

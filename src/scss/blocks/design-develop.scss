@@ -3,7 +3,6 @@
 	h2.title {
 		font-size: 25px;
 		font-weight: 700;
-		font-family: $font-add;
 		color: $color-blue;
 		margin-bottom: 60px;
 		text-align: center;
@@ -16,17 +15,17 @@
 		display: flex;
 		justify-content: center;
 		a {
-			// background-color: $color-green;
 			font-size: 16px;
 			color: $color-blue;
 			align-self: center;
 			overflow: hidden;
 			text-decoration: none;
-			padding: 15px 40px;
-			background-image: url("../images/svg/button-gradient.svg");
+			background-image: url("../images/svg/buttons/btn-show-portfolio.svg");
 			background-size: contein;
 			background-repeat: no-repeat;
 			background-position: center;
+			width: 200px;
+			height: 45px;
 			@media (max-width: 768px) {
 				font-size: 15px;
 			}
@@ -88,6 +87,7 @@
 		@media (max-width: 768px) {
 			width: 30px;
 			height: 30px;
+			line-height: 30px;
 			font-size: 25px;
 			transform: translateX(0);
 		}

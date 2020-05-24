@@ -1,0 +1,46 @@
+.produv-description {
+	padding-top: 70px;
+	h1.title {
+		font-size: 30px;
+		font-weight: 700;
+		color: $color-blue;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	p.subtitle {
+		font-size: 20px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+}
+
+.produv-description__row {
+	display: flex;
+	margin-bottom: 40px;
+	h3.title {
+		font-size: 20px;
+		font-weight: 700;
+		color: $color-blue;
+		width: 20%;
+		flex: 1 0 auto;
+		text-align: right;
+	}
+	p {
+		margin-left: 20px;
+		font-size: 18px;
+	}
+	ol {
+		margin-left: 20px;
+		font-size: 18px;
+		li {
+			margin-bottom: 20px;
+			display: flex;
+			span.number {
+				margin-right: 10px;
+				font-size: 20px;
+				font-weight: 700;
+				color: $color-blue;
+			}
+		}
+	}
+}

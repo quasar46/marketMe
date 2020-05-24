@@ -11,7 +11,7 @@
 			flex-direction: column;
 		}
 	}
-	@media(max-width: 768px) {
+	@media (max-width: 768px) {
 		margin-bottom: 40px;
 	}
 }
@@ -36,7 +36,7 @@
 	width: 310px;
 	height: 320px;
 	padding: 30px;
-	background-color: #eef8fd;
+	background-color: $color-light-blue;
 	color: white;
 	overflow: hidden;
 	h2.title {

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1621 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-518.626,-25725.8)">
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <g transform="matrix(204.196,0,0,-204.196,39.4124,3104.6)">
+                <path d="M0.197,0.086C0.15,0.086 0.112,0.047 0.112,0C0.112,-0.047 0.15,-0.086 0.197,-0.086L0.978,-0.086C1.026,-0.086 1.064,-0.047 1.064,0C1.064,0.047 1.026,0.086 0.978,0.086L0.197,0.086Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <g transform="matrix(1,0,0,1,239.18,3090.99)">
+                <path d="M0,27.222L-159.444,27.222C-166.949,27.222 -173.055,21.117 -173.055,13.612C-173.055,6.106 -166.949,0 -159.444,0L0,0C7.505,0 13.611,6.106 13.611,13.612C13.611,21.117 7.505,27.222 0,27.222" style="fill:white;fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <g transform="matrix(1,0,0,1,-0.54192,-6.86434)">
+                <text x="76.568px" y="3115.18px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:rgb(34,57,129);">Св<tspan x="92.528px " y="3115.18px ">я</tspan>за<tspan x="112.19px 118.05px 124.729px 131.135px " y="3115.18px 3115.18px 3115.18px 3115.18px ">ться</tspan></text>
+                <text x="140.437px" y="3115.18px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:rgb(34,57,129);">со</text>
+                <text x="156.609px" y="3115.18px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:rgb(34,57,129);">сп<tspan x="169.961px 177.096px 184.448px 191.615px 198.751px 206.242px 213.41px 219.816px 225.53px " y="3115.18px 3115.18px 3115.18px 3115.18px 3115.18px 3115.18px 3115.18px 3115.18px 3115.18px ">ециалисто</tspan>м</text>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,-1.5828e-06)"><stop offset="0" style="stop-color:rgb(160,74,155);stop-opacity:1"/><stop offset="0" style="stop-color:rgb(160,74,155);stop-opacity:1"/><stop offset="0.32" style="stop-color:rgb(34,57,130);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(103,192,139);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

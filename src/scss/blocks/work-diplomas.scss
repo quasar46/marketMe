@@ -1,0 +1,43 @@
+.work-diplomas {
+	max-width: 670px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	margin-bottom: 70px;
+	h2.title {
+		font-size: 30px;
+		font-weight: 400;
+		color: $color-blue;
+		margin-bottom: 60px;
+		text-align: center;
+		text-transform: uppercase;
+		@media (max-width: 768px) {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 70px;
+		li {
+			width: calc(50% - 35px);
+			img {
+				transition: 0.3s;
+				&:hover {
+					transition: 0.3s;
+					transform: scale(1.1);
+				}
+			}
+			@media (max-width: 768px) {
+				width: calc(50% - 10px);
+			}
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 50px;
+		}
+	}
+	@media (max-width: 768px) {
+		margin-bottom: 50px;
+	}
+}

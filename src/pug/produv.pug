@@ -1,0 +1,135 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				h1.visually-hidden MarketMe B2B маркетинг
+				.container.container--mode
+					section.produv
+						.produv-description
+							h1.title PRUDOV CONSTRUCTION
+							p.subtitle Ребрендинг строительной компании с последующим внедрением и комплексным маркетинговым сопровождением на постоянной основе
+							.produv-description__row
+								h3.title Описание
+								p Группа компаний занимается строительством промышленных и жилых объектов под ключ с 2008 г.
+							.produv-description__row
+								h3.title Цели
+								ol
+									li 
+										span.number 1.
+										span Сформировать единую репутацию надежного и стабильного генерального подрядчика
+									li 
+										span.number 2.
+										span Увеличить средний чек в 3 раза
+									li 
+										span.number 3.
+										span Получать стабильно 2-3 контракта категории «А» в год, включая европейских заказчиков
+									li 
+										span.number 4.
+										span Расширить сферу деятельности не только на территории СЗФО, но и по всей России
+									li 
+										span.number 5.
+										span Продавать дополнительные услуги отдельно от основной по генеральному подряду
+									li 
+										span.number 6.
+										span Создать постоянный поток входящих целевых лидов
+									li 
+										span.number 7.
+										span Построить и систематизировать отдел продаж
+
+						.produv-results
+							h2.title Результаты
+							ol
+								li 
+									span.number 1.
+									span Увеличение объема продаж в <span class="mark">2 раза</span>
+								li 
+									span.number 2.
+									span Регулярный трафик входящих заявок посредством контекстной рекламы. <span class="mark">20</span> рекламных кампаний. CTR более <span class="mark">13%</span>
+								li 
+									span.number 3.
+									span Общий объем входящих заявок по контекстной рекламе за <span class="mark">3 месяца - 1 млрд 700 млн р. при затратах 110 т.р. в месяц</span>
+
+						.produv-action
+							h2.title ЧТО МЫ СДЕЛАЛИ
+							.produv-action__list
+
+								.product-action__row
+									img.count(src="images/svg/numbers/1.svg" alt="")
+									span Провели маркетинговое исследование конкурентного окружения и потребительских трендов
+
+								.product-action__row
+									img.count(src="images/svg/numbers/2.svg" alt="")
+									span Выявили возможные точки отстройки от конкурентов, учитывая целеполагание
+
+								.product-action__row
+									img.count(src="images/svg/numbers/3.svg" alt="")
+									span Определили уникальное торговое предложение
+
+								.product-action__row
+									img.count(src="images/svg/numbers/4.svg" alt="")
+									span Сформулировали 3 гипотезы позиционирования. Помогли Заказчику выбрать оптимальную.
+
+								.product-action__row
+									img.count(src="images/svg/numbers/5.svg" alt="")
+									span Общего имени у группы компаний не было. Предложили 20 вариантов наименований. Заказчик выбрал имя для группы компаний, поддерживающее его личную репутацию.
+
+								.product-action__row
+									img.count(src="images/svg/numbers/6.svg" alt="")
+									span Общего имени у группы компаний не было. Предложили 20 вариантов наименований. Заказчик выбрал имя для группы компаний, поддерживающее его личную репутацию.
+								span.image
+									img(src="images/svg/produv/produv1.svg" alt="")
+
+								.product-action__row.product-action__row--center
+									img.count(src="images/svg/numbers/7.svg" alt="")
+									span Оформили бренд-бук
+								span.image
+									img(src="images/svg/produv/brendbook1.svg" alt="")
+								span.image
+									img(src="images/svg/produv/brendbook2.svg" alt="")
+								span.image
+									img(src="images/svg/produv/brendbook3.svg" alt="")
+								span.image
+									img(src="images/svg/produv/brendbook4.svg" alt="")
+
+								.product-action__row
+									img.count(src="images/svg/numbers/8.svg" alt="")
+									span Создали с нуля корпоративный сайт, адаптивный для десктопа, планшета и мобильных телефонов <a href="http://www.prudov-construction.com">www.prudov-construction.com</a>
+								span.image
+									img(src="images/svg/produv/brendbook5.svg" alt="")
+								span.image
+									img(src="images/svg/produv/brendbook6.svg" alt="")
+
+								.product-action__row.product-action__row--mode
+									img.count(src="images/svg/numbers/9.svg" alt="")
+									.product-action__row-inner
+										span Разработали сейлз кит, состоящий из:
+										ul
+											li шаблона коммерческого предложения
+											li корпоративной презентации
+											li карточки предприятия
+										span Все материалы подготовлены на русском и английском языках 
+
+								.produv-action__slider
+									ul.slick-slider2
+										li.produv-action__slider-item
+											img(src="images/svg/produv/produv-slider.svg", alt="")
+										li.produv-action__slider-item
+											img(src="images/svg/produv/produv-slider.svg", alt="")
+										li.produv-action__slider-item
+											img(src="images/svg/produv/produv-slider.svg", alt="")
+
+								.product-action__row.product-action__row--center
+									img.count(src="images/svg/numbers/10.svg" alt="")
+									span Запустили контекстную рекламу в Яндекс.Директ и Google AdWords
+							.btn-wrapper
+								a(href="#").btn-gradient Вернуться в портфолио
+
+		include modules/footer.pug
+		include modules/modal-order.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

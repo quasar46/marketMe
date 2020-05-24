@@ -1,15 +1,20 @@
 .complex-description {
+	padding-top: 70px;
 	h2.title {
 		font-size: 30px;
-		font-weight: 400;
+		font-weight: 700;
 		color: $color-blue;
 		text-align: center;
 		text-transform: uppercase;
 		margin-bottom: 70px;
+		font-family: $font-base;
 		@media (max-width: 768px) {
 			font-size: 18px;
 			margin-bottom: 30px;
 		}
+	}
+	@media (max-width: 768px) {
+		padding-top: 30px;
 	}
 }
 

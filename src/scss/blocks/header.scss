@@ -1,11 +1,5 @@
 header {
-	// border-bottom: 2px solid $color-blue;
 	position: relative;
-	margin-bottom: 70px;
-	position: relative;
-	@media (max-width: 768px) {
-		margin-bottom: 30px;
-	}
 }
 
 .header__gradient {
@@ -15,15 +9,18 @@ header {
 	background-repeat: repeat;
 	height: 5px;
 	bottom: 0;
-	left: 0;
+	left: -10px;
+	padding-right: 10px;
 	width: 100%;
+	box-sizing: content-box;
+
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 40px 40px 80px;
+	padding: 40px 0;
 	@media (max-width: 768px) {
 		padding: 20px 0;
 	}
@@ -38,43 +35,21 @@ header {
 	}
 }
 
-.header__menu {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	li {
-		margin-right: 30px;
-		a {
-			color: $color-blue;
-			font-size: 19px;
-			font-weight: 400;
-			text-decoration: none;
-			&:hover {
-				color: $color-green;
-			}
-		}
-	}
-	@media (max-width: 768px) {
-		display: none;
-	}
-}
-
 .header__contacts {
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
+	font-family: $font-add;
 	li {
 		display: flex;
 		flex-direction: column;
 		span {
-			color: $color-green;
+			color: $color-text;
 			font-size: 12px;
 			font-weight: 400;
 		}
 		a {
-			color: $color-green;
+			color: $color-text;
 			font-size: 12px;
 			font-weight: 400;
 			text-decoration: none;

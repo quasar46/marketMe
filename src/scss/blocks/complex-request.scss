@@ -1,5 +1,7 @@
 .complex-request__inner {
-	background-color: #eef8fd;
+	position: relative;
+	z-index: 1;
+	background-color: $color-light-blue;
 	padding: 30px 45px;
 	h3.title {
 		font-size: 24px;
@@ -20,6 +22,7 @@
 	padding: 60px 140px;
 	@media (max-width: 768px) {
 		padding: 40px 10px;
+		padding-top: 0;
 	}
 }
 
@@ -62,6 +65,7 @@
 		font-size: 18px;
 		padding-left: 30px;
 		position: relative;
+		line-height: 1;
 		&::before {
 			content: "";
 			position: absolute;
@@ -85,37 +89,35 @@
 			font-size: 11px;
 		}
 	}
-	input[type="checkbox"] {
-		display: none;
-		&:checked + label::before {
-			background-image: url("../images/svg/check.svg");
-			background-size: 22px 22px;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-	}
 }
 
-.complex-request__button {
-	display: flex;
-	justify-content: center;
-
-	input[type="submit"] {
-		font-size: 16px;
-		font-weight: 400;
-		color: $color-blue;
+input[type="checkbox"] {
+	display: none;
+	&:checked + label::before {
+		background-image: url("../images/svg/check.svg");
+		background-size: 22px 22px;
 		background-repeat: no-repeat;
-		background-color: transparent;
-		// border-radius: 30px;
-		border: none;
-		background-image: url("../images/svg/button-gradient-big.svg");
-		padding: 15px 30px;
-		// box-shadow: inset 0 0 15px #000;
-		// &:hover {
-		// 	box-shadow: inset 0 0 10px #000;
-		// }
-		// @media (max-width: 768px) {
-		// 	font-size: 14px;
-		// }
+		background-position: center;
 	}
 }
+
+// .complex-request__button {
+// 	display: flex;
+// 	justify-content: center;
+
+// 	input[type="submit"] {
+// 		font-size: 16px;
+// 		font-weight: 400;
+// 		color: $color-blue;
+// 		background-repeat: no-repeat;
+// 		background-color: transparent;
+// 		border: none;
+// 		width: 250px;
+// 		background-image: url("../images/svg/buttons/btn-call-specialist.svg");
+// 		padding: 15px 30px;
+// 		@media(max-width: 768px) {
+// 			background-image: url("../images/svg/buttons/btn-call-specialist__mob.svg");
+// 			width: 194px;
+// 		}
+// 	}
+// }

@@ -1,0 +1,127 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+
+				section.context
+					// context top
+					.context-top
+						.container
+							h1.title КОНТЕКСТНАЯ РЕКЛАМА
+							.context-top__wrapper
+								.context-top__wrapper-row
+									p.context-top__wrapper-row-text Онлайн реклама на сегодня является одним из важных каналов продвижения компаний, услуг, продуктов
+									.context-top__wrapper-picture
+										img(src="images/pictures/context/1.jpg" alt="")
+
+								.context-top__wrapper-row
+									p.text-center Успех онлайн рекламы во многом зависит не только от качества работы по настройкам, но прежде всего от целеполагания:
+									ul
+										li
+											img(src="images/svg/numbers/1.svg" alt="") 
+											span Увеличение входящего трафика клиентов
+										li
+											img(src="images/svg/numbers/2.svg" alt="") 
+											span Уменьшение стоимости привлечения клиентов
+										li
+											img(src="images/svg/numbers/3.svg" alt="") 
+											span Сокращение затрат на традиционные холодные исходящие продажи
+										li
+											img(src="images/svg/numbers/4.svg" alt="") 
+											span Работы по созданию эффективной рекламы на поиске
+					// context advantages
+					.context-advantages
+						.container
+							h2.title БЛАГОДАРЯ СОБСТВЕННЫМ НОУ-ХАУ ТЕХНОЛОГИЯМ МЫ:
+							.context-advantages__list
+								div.context-advantages__item
+									img(src="images/pictures/context/2.jpg" alt="")
+									h3 Экономим бюджет
+									p Привлекаем только целевой трафик из потенциальных клиентов, а не интересантов
+								div.context-advantages__item
+									img(src="images/pictures/context/3.jpg" alt="")
+									h3 Предлагаем более дешевые клики
+									p Эффективно управляем онлайн рекламой с оптимальным бюджетированием и более низкой относительно ниши стоимостью лида
+								div.context-advantages__item
+									img(src="images/pictures/context/4.jpg" alt="")
+									h3 Гарантируем высокую конверсию даже в сложных сегментах:
+									ul
+										li Строительство и проектирование
+										li Промышленное производство
+										li Сложное технологическое оборудование
+										li IT-технологии и телекоммуникации
+										li Медицинские продуктыи оборудование
+										li Логистические услуги
+										li Start-up проекты
+
+					// context work
+					.context-work
+						.container
+							h2.title Что мы делаем:
+							.context-work__wrapper
+								.context-work__wrapper-col
+									img(src="images/pictures/context/5.jpg" alt="")
+									h3 РАЗОВАЯ НАСТРОЙКА
+									ul
+										li сбор и кластеризация семантического ядра
+										li минусация
+										li создание рекламных объявлений
+										li запуск рекламных кампаний на поиске в сети Google
+										li запуск рекламных кампаний на поиске в сети Яндекс
+										li настройка медийной рекламы в Яндекс.Директ: РСЯ и баннерная реклама
+										li настройка Google.Analytics
+										li настройка Яндекс.Метрики
+										li ретаргетинг
+								.context-work__wrapper-col
+									img(src="images/pictures/context/6.jpg" alt="")
+									h3 ВЕДЕНИЕ КОНТЕКСТНОЙ РЕКЛАМЫ
+									ul
+										li ручное управление ставками
+										li ежедневный мониторинг рекламных кампаний
+										li изменения и добавления новых кампаний
+										li адаптивная корректировка рекламных кампанийна основе отклика рынка
+										li уменьшение стоимости клика
+										li увеличение CTR
+										li формулирование потребности у клиентовс еще несформированной потребностьюи превращение их в конверсионных
+										li еженедельная отчетность
+
+					// request					
+					.complex-request
+						.container
+							.complex-request__wrapper
+								.complex-request__inner
+									h3.title Оставьте заявку и мы свяжемся с вами в ближайшее время
+									form.complex-request__form
+										.complex-request__inputs
+											label(for="input-name") 
+												span Ваше имя*
+												input(type="text" id="input-name")
+											label(for="input-tel") 
+												span Ваш телефон*
+												input(type="tel" id="input-tel")
+
+										.complex-request__consent
+											input(type="checkbox" id="consent")
+											label(for="consent") Я даю согласие на обработку персональных данных и соглашаюсь с <a href="politica.pdf">политикой конфиденциальности</a>
+
+										.btn-wrapper
+											.btn-gradient.btn-gradient--mode
+												input(type="submit" value="Связатся со специалистом")
+
+
+
+
+
+
+
+
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

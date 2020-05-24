@@ -9,7 +9,7 @@
 	z-index: 100;
 	transition: 0.4s;
 	&.active {
-		top: 98px;
+		top: 101px;
 		transition: 0.4s;
 	}
 }
@@ -19,12 +19,22 @@
 		display: flex;
 		flex-direction: column;
 		li {
-			margin-bottom: 8px;
+			// margin-bottom: 8px;
 		}
 		a {
 			font-size: 13px;
 			color: $color-blue;
 			text-decoration: none;
+		}
+		&:nth-child(1) {
+			margin-bottom: 20px;
+		}
+		&:nth-child(2) {
+			a {
+				color: $color-text;
+				display: flex;
+				flex-direction: column;
+			}
 		}
 	}
 }

@@ -7,15 +7,37 @@ header
 				a(href="index.html")
 					img(src="images/svg/logo.svg" alt="")
 			// header menu
-			ul.header__menu
-				li
-					a(href="") О нас
-				li
-					a(href="") Портфолио
-				li
-					a(href="") Услуги
-				li
-					a(href="") Контакты
+			nav(role="navigation")
+				ul.header-menu
+					li
+						a(href="") О нас
+						ul.submenu
+							li
+								a(href="work.html") Как мы работаем
+							li
+								a(href="duide.html") Руководство и СМИ
+					li
+						a(href="") Портфолио
+					li
+						a(href="") Услуги
+						ul.submenu
+							li
+								a(href="complex.html") Комплексный подход
+							li
+								a(href="") Стратегический маркетинг. <br> Брендинг
+							li
+								a(href="design.html") Дизайн
+							li
+								a(href="") Создание презентаций
+							li
+								a(href="") Разработка сайтов
+							li
+								a(href="") Интернет-продвижение
+							li
+								a(href="context.html") Контекстная реклама
+
+					li
+						a(href="contacts.html") Контакты
 			// header contacts
 			ul.header__contacts
 				li
@@ -34,27 +56,27 @@ header
 				.mobile-menu__wrapper
 					ul
 						li
-							a(href="") О нас
+							a(href="work.html") Как мы работаем
+						li
+							a(href="guide.html") Руководство и СМИ
 						li
 							a(href="") Портфолио
 						li
-							a(href="") Услуги
+							a(href="complex.html") Комплексный подход
 						li
-							a(href="") Комплексный подход
+							a(href="") Стратегический маркетинг. Брендинг
+						li
+							a(href="design.html") Дизайн
 						li
 							a(href="") Создание презентаций
 						li
 							a(href="") Разработка сайтов
 						li
-							a(href="") Дизайн
-						li
-							a(href="") Стратегический маркетинг. Брендинг
-						li
 							a(href="") Интернет-продвижение
 						li
-							a(href="") Маркетинговый консалтинг
+							a(href="context.html") Контекстная реклама
 						li
-							a(href="") Конакты
+							a(href="contacts.html") Конакты
 
 					ul
 						li

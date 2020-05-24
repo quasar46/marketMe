@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1394 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-636.575,-31303.8)">
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <g transform="matrix(1,0,0,1,0,30.0415)">
+                <text x="94.963px" y="3746.59px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12.444px;fill:rgb(34,57,129);">Посм<tspan x="125.728px 132.406px 138.136px 145.088px 151.626px 157.356px " y="3746.59px 3746.59px 3746.59px 3746.59px 3746.59px 3746.59px ">отреть</tspan> СМ<tspan x="186.632px " y="3746.59px ">И</tspan></text>
+                <text x="198.191px" y="3746.59px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12.444px;fill:rgb(34,57,129);">о</text>
+                <text x="208.097px" y="3746.59px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12.444px;fill:rgb(34,57,129);">нас</text>
+            </g>
+        </g>
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <g transform="matrix(175.608,0,0,-175.608,56.7607,3773.96)">
+                <path d="M0.211,0.1C0.156,0.1 0.112,0.055 0.112,0C0.112,-0.055 0.156,-0.1 0.211,-0.1L0.964,-0.1C1.019,-0.1 1.064,-0.055 1.064,0C1.064,0.055 1.019,0.1 0.964,0.1L0.211,0.1ZM0.134,0C0.134,0.043 0.169,0.078 0.211,0.078L0.964,0.078C1.007,0.078 1.042,0.043 1.042,0C1.042,-0.043 1.007,-0.078 0.964,-0.078L0.211,-0.078C0.169,-0.078 0.134,-0.043 0.134,0Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,-1.08993e-06)"><stop offset="0" style="stop-color:rgb(159,74,154);stop-opacity:1"/><stop offset="0" style="stop-color:rgb(159,74,154);stop-opacity:1"/><stop offset="0.32" style="stop-color:rgb(34,57,129);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(103,191,138);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

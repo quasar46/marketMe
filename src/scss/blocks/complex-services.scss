@@ -1,6 +1,6 @@
 .complex-services {
 	h2.title {
-		font-family: $font-add;
+		font-family: $font-base;
 		font-size: 30px;
 		font-weight: 700;
 		margin-bottom: 60px;
@@ -9,6 +9,7 @@
 		color: $color-blue;
 		@media (max-width: 768px) {
 			font-size: 20px;
+			margin-bottom: 90px;
 		}
 	}
 }
@@ -20,6 +21,7 @@
 	flex: 1 0 auto;
 	position: relative;
 	.alt {
+		margin-right: 15px;
 		font-family: $font-add;
 		position: absolute;
 		padding: 20px;
@@ -37,19 +39,17 @@
 		&::after {
 			content: "";
 			position: absolute;
-			bottom: -20px;
-			border: 30px solid transparent;
-			border-top: 30px solid #fff;
-			z-index: 10;
-			right: -10px;
-			transform: rotate(225deg);
+			background-image: url("../images/svg/web-decorator.svg");
+			background-repeat: no-repeat;
+			width: 35px;
+			height: 36px;
+			background-size: cover;
+			bottom: 1px;
+			right: 20px;
+			transform: scaleX(-1) translateY(100%);
 			@media (max-width: 768px) {
-				left: -5px;
-				right: auto;
-				transform: rotate(135deg);
-				border: 20px solid transparent;
-				border-top: 20px solid #fff;
-				box-shadow: 0 -7px 5px -4px #58595b3d;
+				transform: scaleX(1) translateY(100%);
+				left: 20px;
 			}
 		}
 		@media (max-width: 768px) {
@@ -94,17 +94,15 @@
 		&::after {
 			content: "";
 			position: absolute;
-			bottom: -20px;
-			border: 30px solid transparent;
-			border-top: 30px solid #fff;
-			z-index: 10;
-			left: -10px;
-			transform: rotate(135deg);
+			background-image: url("../images/svg/web-decorator.svg");
+			background-repeat: no-repeat;
+			width: 35px;
+			height: 36px;
+			background-size: cover;
+			bottom: 1px;
+			left: 20px;
+			transform: translateY(100%);
 			@media (max-width: 768px) {
-				border: 20px solid transparent;
-				border-top: 20px solid #fff;
-				left: -5px;
-				box-shadow: 0 -7px 5px -4px #58595b3d;
 			}
 		}
 		@media (max-width: 768px) {
@@ -136,7 +134,7 @@
 	}
 	@media (max-width: 768px) {
 		flex-direction: column;
-		margin-bottom: 65px;
+		// margin-bottom: 90px;
 	}
 }
 
@@ -147,5 +145,8 @@
 		@media (max-width: 768px) {
 			font-size: 14px;
 		}
+	}
+	@media (max-width: 768px) {
+		padding-bottom: 50px;
 	}
 }

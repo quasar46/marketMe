@@ -1,5 +1,6 @@
 .contacts-write {
 	display: flex;
+	padding-top: 70px;
 	padding-bottom: 60px;
 	h2.title {
 		font-size: 25px;
@@ -19,6 +20,7 @@
 		}
 	}
 	@media (max-width: 768px) {
+		padding-top: 30px;
 		flex-direction: column;
 	}
 }
@@ -132,4 +134,19 @@
 .contacts-write__submit {
 	display: flex;
 	justify-content: center;
+	input {
+		border: none;
+		background-color: transparent;
+		width: 205px;
+		height: 45px;
+		background-image: url("../images/svg/buttons/btn-send-message.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		@media(max-width: 768px) {
+			background-image: url("../images/svg/buttons/btn-send-message__mob.svg");
+			width: 156px;
+			height: 35px;
+		}
+	}
 }
