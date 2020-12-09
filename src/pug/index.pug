@@ -1,207 +1,331 @@
-doctype html
-html(lang="ru")
-	head
-		include modules/head.pug
-	body
-		.content
-			include modules/header.pug
-
-			main
-				h1.visually-hidden MarketMe B2B маркетинг
-
-				section.index
-					.index-save
-						picture
-							<!--[if IE 9]><video style="display: none;"><![endif]-->
-							source(srcset="images/svg/backgrounds/save-buiznes-mobile.svg" media="(max-width: 768px)")
-							<!--[if IE 9]></video><![endif]-->
-							img(src="images/svg/backgrounds/save-buiznes.svg" alt="")
-
-					.index-calculations
-						.index-calculations__bg
-							picture
-								<!--[if IE 9]><video style="display: none;"><![endif]-->
-								source(srcset="images/svg/backgrounds/calculations-mobile.svg" media="(max-width: 768px)")
-								<!--[if IE 9]></video><![endif]-->
-								img(src="images/svg/backgrounds/calculations.svg" alt="")
-
-						//- ul
-						//- 	li
-						//- 		span.title 20 лет
-						//- 		span практического<br> маркетинга
-						//- 	li
-						//- 		span.title B2B
-						//- 		span технологии
-						//- 	li
-						//- 		span.title 500%
-						//- 		span средний<br> ROMI
-						//- 	li
-						//- 		span Спасаем по
-						//- 		span.title 10 <b>бизнесов</b>
-						//- 		span в год
-						//- 	li
-						//- 		span Прирост продаж
-						//- 		span.title <b>в</b> 3 <b>раза</b>
-						//- 	li
-						//- 		span Работаем с
-						//- 		span.title 25 <b class="mode">сегментами</b>
-						//- 		span рынка
-						.index-calculations__remark
-							.container
-								span Все сейчас обсуждают организацию удаленного рабочего места, однако, все забывают о том, что надо не только ставить задачи и контролировать персонал в онлайне, но и осуществлять продажи в новом дистанционном формате
-
-					.index-questions
+include modules/head.pug
+body
+	.content
+		include modules/header.pug
+		main
+			h1.visually-hidden MarketMe B2B маркетинг
+			section.index
+				.index-save
+					// <picture>
+					//if IE 9
+						video(style='display: none;')
+					// <source srcset="images/svg/backgrounds/save-buiznes-mobile.svg" media="(max-width: 768px)">
+					//if IE 9
+					// <img src="images/svg/backgrounds/save-buiznes.svg" alt="">
+					// </picture>
+				.index-calculations
+					.index-calculations__bg
+						// <picture>
+						//if IE 9
+							video(style='display: none;')
+						// <source srcset="images/svg/backgrounds/calculations-mobile.svg" media="(max-width: 768px)">
+						//if IE 9
+						// <img src="images/svg/backgrounds/calculations.svg" alt="">
+						// </picture>
+					.index-calculations__remark
 						.container
-							ul
-								li Ваша компания готова привлекать клиентов в онлайн режиме?
-								li Вы знаете, какие инструменты продаж в онлайне будут наиболее быстро конвертируемыми и выгодными именно для вашего сегмента рынка и компании?
-								li Ваши менеджеры знают, какие аргументы работают в условиях кризиса? И это отнюдь не дешёвая цена!
-
-					.index-sales
-						.container
-							.index-sales__wrapper
-								.index-sales__picture
-									img(src="images/pictures/sales.jpg" alt="")
-								.index-sales__content
-									span Мы настроим для вашей компании
-									span.strong быстрые и эффективные продажи в онлайн
-
-					.index-process
-						picture
-							<!--[if IE 9]><video style="display: none;"><![endif]-->
-							source(srcset="images/svg/backgrounds/process-mobile.svg" media="(max-width: 768px)")
-							<!--[if IE 9]></video><![endif]-->
-							img(src="images/svg/backgrounds/process.svg" alt="")
-
-
-					.index-actions
+							span
+								| Все сейчас обсуждают организацию удаленного рабочего места, однако,
+								| все забывают о том, что надо не только ставить задачи и контролировать персонал в
+								| онлайне, но и осуществлять продажи в новом дистанционном формате
+				.index-questions
+					.container
 						ul
+							li Ваша компания готова привлекать клиентов в онлайн режиме?
 							li
-								p.index-actions__title Разработаем продающий сайт или лэндинг
+								| Вы знаете, какие инструменты продаж в онлайне будут наиболее быстро конвертируемыми и
+								| выгодными именно для вашего сегмента рынка и компании?
 							li
-								p.index-actions__title Запустим контекстную рекламу
-							li
-								p.index-actions__title Настроим таргетированную рекламу в социальных сетях
-							li
-								p.index-actions__title Сформируем репутацию в онлайн, которая даст максимальную конверсию
+								| Ваши менеджеры знают, какие аргументы работают в условиях кризиса? И это отнюдь не
+								| дешёвая цена!
+				.index-sales
+					.container
+						.index-sales__wrapper
+							.index-sales__picture
+								picture
+									source(srcset="images/pictures/sales-700.jpg" media="(max-width: 700px)")
+									source(srcset="images/pictures/sales-768.jpg" media="(max-width: 768px)")
+									source(srcset="images/pictures/sales-1440.jpg" media="(max-width: 1440px)")
+									img(src='images/pictures/sales.jpg' alt='')
 
-						.index-actions__order
-							.container
-								.index-actions__order-inner
-									span Оставьте заявку на беплатную 30-минутную онлайн консультацию
-									.btn-wrapper
-										a.btn-gradient.popup1_open#order-btn Оставить заявку
+							.index-sales__content
+								span Мы настроим для вашей компании
+								span.strong быстрые и эффективные продажи в онлайн
+				.index-process
+					.index-process__inner
+					// <picture>
+					//if IE 9
+						video(style='display: none;')
+					// <source srcset="images/svg/backgrounds/process-mobile.svg" media="(max-width: 768px)">
+					//if IE 9
+					// <img src="images/svg/backgrounds/process.svg" alt="">
+					// </picture>
+				.index-actions
+					ul
+						li
+							p.index-actions__title Разработаем продающий сайт или лэндинг
+						li
+							p.index-actions__title Запустим контекстную рекламу
+						li
+							p.index-actions__title Настроим таргетированную рекламу в социальных сетях
+						li
+							p.index-actions__title
+								| Сформируем репутацию в онлайн, которая даст максимальную
+								| конверсию
+					.index-actions__order
+						.container
+							.index-actions__order-inner
+								span Оставьте заявку на беплатную <i class="br"></i> 30-минутную онлайн консультацию
+								.btn-wrapper
+									a.btn-gradient(data-fancybox='' data-src='#popup1' href='javascript:;') Оставить заявку
+				.index-slider
+					// slider
+					ul.index-slider__list.slick-slider
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider1.jpg')")
+							.index-slider__content
+								h3 PRUDOV CONSTRUCTION 
+								p
+									| Ребрендинг строительной компании с последующим внедрением и комплексным маркетинговым
+									| сопровождением на постоянной основе
+								.btn-wrapper
+									a.btn-gradient(href='prudov-construction.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider2.jpg')")
+							.index-slider__content
+								h3 Q-Energy
+								p Комплексный ребрендинг электромонтажной компании
+								.btn-wrapper
+									a.btn-gradient(href='q-energy.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider3.jpg')")
+							.index-slider__content
+								h3 Gronin Bureau
+								p Ребрендинг проектной компании «Институт строительного проектирования GEO Design»
+								.btn-wrapper
+									a.btn-gradient(href='gronin-bureau.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider4.jpg')")
+							.index-slider__content
+								h3 DP Business Club
+								p Разработка нового логотипа и фирменного стиля для «Клуба «Деловой Петербург»
+								.btn-wrapper
+									a.btn-gradient(href='dp-business-club.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider5.jpg')")
+							.index-slider__content
+								h3 Tornhoff
+								p Маркетинговое развитие проекта с нуля
+								.btn-wrapper
+									a.btn-gradient(href='tornhoff.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider6.jpg')")
+							.index-slider__content
+								h3 Научно-развлекательный комплекс 
+								p Комплексная подготовка инвестиционного проекта
+								.btn-wrapper
+									a.btn-gradient(href='gazprom.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider7.jpg')")
+							.index-slider__content
+								h3 Ligar Wood
+								p Брендинг деревообрабатывающего производства
+								.btn-wrapper
+									a.btn-gradient(href='ligar-wood.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider8.jpg')")
+							.index-slider__content
+								h3 Telecom 5
+								p Ребрендинг компании, принадлежащей Ростелеком и Сбербанку
+								.btn-wrapper
+									a.btn-gradient(href='telecom-5.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider9.jpg')")
+							.index-slider__content
+								h3 Индустриальный парк «Марьино»
+								p
+									| Формирование рекламной стратегии индустриального парка и запуск контекстной рекламы
+									| по продаже участков промышленного назначения
+								.btn-wrapper
+									a.btn-gradient(href='industrialnyj-park-marino.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider10.jpg')")
+							.index-slider__content
+								h3 Kibbler
+								p Разработка фирменного буклета по продажам
+								.btn-wrapper
+									a.btn-gradient(href='kibbler.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider11.jpg')")
+							.index-slider__content
+								h3 Smart Price
+								p Подготовка инвестиционной презентации
+								.btn-wrapper
+									a.btn-gradient(href='smart-price.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider12.jpg')")
+							.index-slider__content
+								h3 Кухни
+								p
+									| Разработка лэндинга по группе товаров «кухни» для интернет магазина дешёвой мебели
+								.btn-wrapper
+									a.btn-gradient(href='kuxni.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider13.jpg')")
+							.index-slider__content
+								h3 Адвокат Мяленков
+								p Разработка сайта адвокатского кабинета
+								.btn-wrapper
+									a.btn-gradient(href='advokat-myalenkov.html') Смотреть
+						// item-slider
+						li.index-slider__item
+							.index-slider__picture(style="background-image:url('images/pictures/index/item-slider14.jpg')")
+							.index-slider__content
+								h3 Bouton Shoes
+								p Репозиционирование розничных магазинов обуви премиального класса в офлайне
+								.btn-wrapper
+									a.btn-gradient(href='bouton-shoes.html') Смотреть
+	// footer
+	include modules/footer.pug
+	//- footer
+	//- 	.container
+	//- 		.footer
+	//- 			// footer header
+	//- 			.footer-header
+	//- 				// footer col
+	//- 				ul.footer-header__col.footer-header__col--1
+	//- 					li.footer__logo
+	//- 						a(href='index.html')
+	//- 							img(src='images/svg/logo.svg' alt='')
+	//- 				// footer col
+	//- 				ul.footer-header__col.footer-header__col--2
+	//- 					li
+	//- 						a(href='work.html') Как мы работаем
+	//- 					li
+	//- 						a(href='guide.html') Руководство и СМИ
+	//- 				// footer col
+	//- 				ul.footer-header__col.footer-header__col--3
+	//- 					li
+	//- 						a(href='') Портфолио
+	//- 				// footer col
+	//- 				ul.footer-header__col.footer-header__col--4
+	//- 					li
+	//- 						a(href='complex.html') Комплексный подход
+	//- 					li
+	//- 						a(href='brending.html') Стратегический маркетинг. Брендинг
+	//- 					li
+	//- 						a(href='design.html') Дизайн
+	//- 					li
+	//- 						a(href='presentation.html') Создание презентаций
+	//- 					li
+	//- 						a(href='development.html') Разработка сайта
+	//- 					li
+	//- 						a(href='marketing.html') Интернет-продвижение
+	//- 					li
+	//- 						a(href='context.html') Контекстная реклама
+	//- 				// footer col
+	//- 				.footer-header__col.footer-header__col--5
+	//- 					ul
+	//- 						li
+	//- 							span.footer-header__title Контакты
+	//- 						li
+	//- 							a(href='tel:+78003022728') 8 800 302 27 28
+	//- 							span (бесплатно по России)
+	//- 						li
+	//- 							a(href='+78129091413') +7 812 909 14 13
+	//- 						li
+	//- 							a(href='mailto: info@market-me.ru') info@market-me.ru
+	//- 					p
+	//- 						| Россия, 199106
+	//- 						i.br
+	//- 						|  г. Санкт-Петербург, 
+	//- 						i.br
+	//- 						i.br
+	//- 						|  Средний пр. В.О., 88 
+	//- 						i.br
+	//- 						|  литера А, офис 501
+	//- 			// footer bottom
+	//- 			.footer-bottom
+	//- 				p.copyright © ООО «МаркетМи» 2020
+	//- 	.footer__gradient
+	include modules/modal-order.pug
+		//- .modal-order
+		//- 	h2.title Оставьте заявку на бесплатную 30-минутную онлайн консультацию
+		//- 	.modal-order__form
+		//- 		.modal-order__form-inputs
+		//- 			label
+		//- 				span Ваше имя*
+		//- 				input(type='text')
+		//- 			label
+		//- 				span Сфера деятельности*
+		//- 				input(type='text')
+		//- 			.modal-order__form-social.on-mobile
+		//- 				p Пожелния к способу связи
+		//- 				ul
+		//- 					li
+		//- 						a.active(style="background-image:url('images/svg/social/icon1.svg')" title="Телефон")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon2.svg')" title="Telegram")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon3.svg')" title="Whatsapp")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon4.svg')" title="Zoom")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon5.svg')" title="Viber")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon6.svg')" title="Scype")
+		//- 			label
+		//- 				span Ваш телефон*
+		//- 				input(type='text')
+		//- 			label
+		//- 				span
+		//- 					| Удобное для звонка
+		//- 					| время*
+		//- 				.modal-order__form-time
+		//- 					button.arrow-top.increase
+		//- 					input.global__time(type="text" value="11:00")
+		//- 					button.arrow-down.decrease
+		//- 					script
 
-					.index-slider
-						// slider
-						ul.index-slider__list.slick-slider
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider1.jpg')")
-								.index-slider__content
-									h3 PRUDOV CONSTRUCTION 
-									p Ребрендинг строительной компании с последующим внедрением и комплексным маркетинговым сопровождением на постоянной основе
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider2.jpg')")
-								.index-slider__content
-									h3 Q-Energy
-									p Комплексный ребрендинг электромонтажной компании
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider3.jpg')")
-								.index-slider__content
-									h3 Gronin Bureau
-									p Ребрендинг проектной компании «Институт строительного проектирования GEO Design»
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider4.jpg')")
-								.index-slider__content
-									h3 DP Business Club
-									p Разработка нового логотипа и фирменного стиля для «Клуба «Деловой Петербург»
-									a(href="").btn-gradient Смотреть
+		//- 		.modal-order__form-bottom
+		//- 			.modal-order__form-social.on-desctop
+		//- 				p Пожелания к способу связи
+		//- 				ul
+		//- 					li
+		//- 						a.active(style="background-image:url('images/svg/social/icon1.svg')" title="Телефон")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon2.svg')" title="Telegram")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon3.svg')" title="Whatsapp")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon4.svg')" title="Zoom")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon5.svg')" title="Viber")
+		//- 					li
+		//- 						a(style="background-image:url('images/svg/social/icon6.svg')" title="Scype")
+		//- 			.complex-request__consent
+		//- 				input#consent(type='checkbox')
+		//- 				label(for='consent')
+		//- 					| Я даю
+		//- 					| согласие на обработку персональных данных и соглашаюсь с  
+		//- 					a(href='politica.pdf' target="_blank") 
+		//- 						| политикой
+		//- 						| конфиденциальности
+		//- 		.btn-wrapper
+		//- 			.btn-gradient.btn-gradient--mode
+		//- 				input(type='submit' value='Оставить заявку')
 
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider5.jpg')")
-								.index-slider__content
-									h3 Tornhoff
-									p Маркетинговое развитие проекта с нуля
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider6.jpg')")
-								.index-slider__content
-									h3 Научно-развлекательный комплекс 
-									p Комплексная подготовка инвестиционного проекта
-									a(href="").btn-gradient Смотреть
-
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider7.jpg')")
-								.index-slider__content
-									h3 Ligar Wood
-									p Брендинг деревообрабатывающего производства
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider8.jpg')")
-								.index-slider__content
-									h3 Telecom 5
-									p Ребрендинг компании, принадлежащей Ростелеком и Сбербанку
-									a(href="").btn-gradient Смотреть
-
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider9.jpg')")
-								.index-slider__content
-									h3 Индустриальный парк «Марьино»
-									p Формирование рекламной стратегии индустриального парка и запуск контекстной рекламы по продаже участков промышленного назначения
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider10.jpg')")
-								.index-slider__content
-									h3 Kibbler
-									p Разработка фирменного буклета по продажам
-									a(href="").btn-gradient Смотреть
-
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider11.jpg')")
-								.index-slider__content
-									h3 Smart Price
-									p Подготовка инвестиционной презентации
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider12.jpg')")
-								.index-slider__content
-									h3 Кухни
-									p Разработка лэндинга по группе товаров «кухни» для  интернет магазина дешёвой мебели
-									a(href="").btn-gradient Смотреть
-
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider13.jpg')")
-								.index-slider__content
-									h3 Адвокат Мяленков
-									p Разработка сайта адвокатского кабинета
-									a(href="").btn-gradient Смотреть
-							// item-slider
-							li.index-slider__item
-								.index-slider__picture(style="background-image:url('images/pictures/index/item-slider14.jpg')")
-								.index-slider__content
-									h3 Bouton Shoes
-									p Репозиционирование розничных магазинов обуви премиального класса в офлайне
-									a(href="").btn-gradient Смотреть
-
-
-
-		include modules/footer.pug
-		include modules/modal-order.pug
-		//- include modules/menu-mobile.pug
-		include modules/script.pug
+	include modules/script.pug

@@ -47,32 +47,77 @@ $(document).ready(function () {
 	})
 });
 
-// popup
 $(document).ready(function () {
+	var Min = 660;//минуты
+	var Min_value = 660;//минимум
+	var Max_value = 1320;//максимум
+	var Step = 30
 
-	// Initialize the plugin
-	$('#popup1').popup({
-		pagecontainer: '#page',
-		escape: true,
-		color: '#223983',
+	function setTime($input) {
+		var hour = Math.floor(Min / 60);
+		var min = Min % 60;
+
+		if (min < 10) {
+			min = '0' + min;
+		}
+
+		if (hour < 10) {
+			hour = '0' + hour;
+		}
+
+		$input.val(hour + ':' + min);
+	}
+
+	$('.decrease').click(function () {
+		if ((Min - Step) < Min_value) return;
+		Min -= Step;
+		if (Min <= 0) Min += 1440;
+		setTime($(this).parent().find('input'));
 	});
 
-
-	$('#closebutton').popup({
-		closebutton: true
+	$('.increase').click(function () {
+		if ((Min + Step) > Max_value) return;
+		Min += Step;
+		if (Min >= 1440) Min -= 1440;
+		setTime($(this).parent().find('input'));
 	});
-
-	// Set default `pagecontainer` for all popups (optional, but recommended for screen readers and iOS*)
-	$.fn.popup.defaults.pagecontainer = '#page'
 });
 
+$(document).ready(function () {
+	$('.modal-order__form-social a').on('click', function () {
+		$(this).toggleClass('active');
+	})
+})
 
-// // video
-// $('#mediaplayer').mediaelementplayer({
-// 	pluginPath: "/path/to/shims/",
-// 	// When using jQuery's `mediaelementplayer`, an `instance` argument
-// 	// is available in the `success` callback
-// 	success: function (mediaElement, originalNode, instance) {
-// 		// do things
-// 	}
-// });
+$(document).ready(function () {
+	$('.header__phone--mobile').on('click', function () {
+		$('#popup-mobile').toggleClass('active');
+	})
+	$('#popup-mobile .close').on('click', function () {
+		$('#popup-mobile').removeClass('active');
+	})
+})
+
+function checkParams() {
+	var name = $('#input-name').val();
+	var phone = $('#input-tel').val();
+
+	if (name.length != 0 && phone.length != 0) {
+		$('#input-submit').removeAttr('disabled');
+	} else {
+		$('#input-submit').attr('disabled', 'disabled');
+	}
+}
+
+function checkParams2() {
+	var name = $('#input-name').val();
+	var phone = $('#input-tel').val();
+	var sfera = $('#input-sfera').val();
+	// var consent = $('#consent');
+
+	if (name.length != 0 && phone.length != 0 && sfera.length != 0) {
+		$('#input-submit').removeAttr('disabled');
+	} else {
+		$('#input-submit').attr('disabled', 'disabled');
+	}
+}

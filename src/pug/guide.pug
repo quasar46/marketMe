@@ -1,85 +1,82 @@
-doctype html
-html(lang="ru")
-	head
-		include modules/head.pug
-	body
-		.content
-			include modules/header.pug
+include modules/head.pug
+body
+	.content
+		include modules/header.pug
+		
+		main
+			// guide
+			section.guide
+				h1.title Руководство и СМИ
+				// guide top
+				.guide-row
+					.guide-row__picture
+					//- img(src='images/pictures/guide/foto.jpg', alt='')
+					.bubble__wrapper
+						.bubble
+							p
+								i Я лично гарантирую вам результат маркетинговых усилий моей команды или не берусь за работу вообще
+							h3.buble-title--mobile КАТЕРИНА ГАМАДЖАН
 
-			main
-
-				// guide
-				section.guide
-					h1.title Руководство
-
-					// guide top
-					.guide-row
-						img(src="images/pictures/guide/foto.jpg" alt="")
-						.bubble__wrapper
-							.bubble
-								p
-									i Я лично гарантирую вам результат маркетинговых усилий моей команды или не берусь за работу вообще
-							h3 КАТЕРИНА ГАМАДЖАН
-							p.on-desctop Управляющий партнер и основатель агентства по B2B маркетингу MarketMe
-
-					p.on-mobile Управляющий партнер и основатель агентства по B2B маркетингу MarketMe
-
-					// guide reference
-					.guide-reference
-						h3 Биографическая справка:
-						ul
-							li
-								img(src="images/svg/numbers/1.svg" alt="")
-								span 20 лет практического маркетинга
-							li
-								img(src="images/svg/numbers/2.svg" alt="")
-								span Более 10 лет проработала топ-менеджером в крупных мультиотраслевых международных холдингах
-							li
-								img(src="images/svg/numbers/3.svg" alt="" )
-								span Работаю только с собственниками бизнеса
-							li
-								img(src="images/svg/numbers/4.svg" alt="")
-								span Лично занимаюсь стратегическим консалтингом B2B бизнеса и развитием личного бренда владельцев компаний
-
-					// guide list
-					.guide-list
-						ul
-							li
-								a(href="https://gsom.spbu.ru/" target="_blank")
-									img(src="images/pictures/guide/1.jpg" alt="" width="286")
-								p Окончила Высшую школу менеджмента СПбГУ
-							li
-								a(href="https://soba.spb.ru/experts_soba" target="_blank")
-									img(src="images/pictures/guide/2.jpg" alt="" width="220")
-								p Вхожу в экспертную комиссию СОБА
-							li
-								a(href="https://dp-club.ru/" target="_blank")
-									img(src="images/pictures/guide/3.jpg" alt="" width="190")
-								p Являюсь резидентом клуба ДП
-
-					// guide video
-					.guide-video
-						.item
-							a(data-fancybox="video" data-type="iframe" data-src="https://www.youtube.com/embed/rXG9fjF_WRI?start=348" href="javascript:;")
-								img(src="images/pictures/guide/video1.png" alt="")
-							p Маркетинг проектного бюро с генеральным<i class="br"></i> директором MarketMe Катериной Гамаджан
-
-						.item
-							a(data-fancybox="video" data-type="iframe" data-src="https://www.youtube.com/embed/vTqLOycnO2s?start=330" href="javascript:;")
-								img(src="images/pictures/guide/video2.png" alt="")
-							p Вебинар по антикризисному менеджменту<i class="br"></i> 09.04.2020 г
-
-						.item
-							a(data-fancybox="video" data-type="iframe" data-src="https://www.youtube.com/embed/QCOe9z_mDH4" href="javascript:;")
-								img(src="images/pictures/guide/video3.png" alt="")
-							p Интервью на Радио Метрикс
-
-						.item
-							a(href="https://www.dp.ru/a/2019/04/04/Katerina_Gamadzhan_ledi_v" target="_blank")
-								img(src="images/pictures/guide/video4.jpg" alt="" width="500" height="281")
-							p Интервью Газета «Деловой Петербург»
-
-
-		include modules/footer.pug
-		//- include modules/menu-mobile.pug
-		include modules/script.pug
+						h3.buble-title--desktop КАТЕРИНА ГАМАДЖАН
+						p.on-desctop.position Управляющий партнер и основатель агентства <i class="br"></i> по B2B маркетингу MarketMe
+				p.on-mobile.position Управляющий партнер и основатель агентства  по B2B маркетингу MarketMe
+				// guide reference
+				.guide-reference
+					h3 Биографическая справка:
+					ul
+						li
+							img(src='images/svg/numbers/1.svg', alt='')
+							span 20 лет практического маркетинга
+						li
+							img(src='images/svg/numbers/2.svg', alt='')
+							span
+								| Более 10 лет проработала топ-менеджером в
+								| крупных мультиотраслевых международных холдингах
+						li
+							img(src='images/svg/numbers/3.svg', alt='')
+							span
+								| Работаю только с собственниками
+								| бизнеса
+						li
+							img(src='images/svg/numbers/4.svg', alt='')
+							span
+								| Лично занимаюсь стратегическим консалтингом
+								| B2B бизнеса и развитием личного бренда владельцев компаний
+				// guide list
+				.guide-list
+					ul
+						li
+							a(href='https://gsom.spbu.ru/', target='_blank')
+								img(src='images/pictures/guide/1.jpg', alt='')
+							p Окончила Высшую школу менеджмента СПбГУ
+						li
+							a(href='https://soba.spb.ru/experts_soba', target='_blank')
+								img(src='images/pictures/guide/2.jpg', alt='')
+							p Вхожу в экспертную комиссию СОБА
+						li
+							a(href='https://dp-club.ru/', target='_blank')
+								img(src='images/pictures/guide/3.jpg', alt='')
+							p Являюсь резидентом клуба ДП
+				// guide video
+				.guide-video
+					.item
+						a(data-fancybox='video', data-type='iframe', data-src='https://www.youtube.com/embed/rXG9fjF_WRI?start=348', href='javascript:;')
+							img(src='images/pictures/guide/video1.png', alt='')
+						a(href="https://www.youtube.com/embed/rXG9fjF_WRI?start=348") Маркетинг проектного бюро с генеральным <i class="br"></i>  директором MarketMe Катериной Гамаджан
+					.item
+						a(data-fancybox='video', data-type='iframe', data-src='https://www.youtube.com/embed/vTqLOycnO2s?start=330', href='javascript:;')
+							img(src='images/pictures/guide/video2.png', alt='')
+						a(href="https://www.youtube.com/embed/vTqLOycnO2s?start=330")
+							| Вебинар по антикризисному менеджменту
+							i.br
+							|  09.04.2020 г
+					.item
+						a(data-fancybox='video', data-type='iframe', data-src='https://www.youtube.com/embed/QCOe9z_mDH4', href='javascript:;')
+							img(src='images/pictures/guide/video3.png', alt='')
+						a(href="https://www.youtube.com/embed/QCOe9z_mDH4") Интервью на Радио Метрикс
+					.item
+						a(href='https://www.dp.ru/a/2019/04/04/Katerina_Gamadzhan_ledi_v', target='_blank')
+							img(src='images/pictures/guide/video4.jpg', alt='', width='500', height='281')
+						a(href="https://www.dp.ru/a/2019/04/04/Katerina_Gamadzhan_ledi_v") Интервью Газета «Деловой Петербург»
+	include modules/footer.pug
+	include modules/script.pug

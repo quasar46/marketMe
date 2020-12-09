@@ -1,0 +1,24 @@
+.complex-request
+	.container
+		.complex-request__wrapper
+			.complex-request__inner
+				h3.title Оставьте заявку и мы свяжемся с вами в ближайшее время
+				form.complex-request__form
+					.complex-request__inputs
+						label(for='input-name')
+							span
+								| Ваше
+								| имя*
+							input#input-name(type='text' onkeyup="checkParams()")
+						label(for='input-tel')
+							span Ваш телефон*
+							input#input-tel(type='tel' onkeyup="checkParams()")
+					.complex-request__consent
+						input#consent(type='checkbox')
+						label(for='consent')
+							| Я даю согласие на обработку персональных данных и соглашаюсь с 
+							a(href='politica.pdf' target="_blank") политикой конфиденциальности
+				.btn-wrapper
+					.btn-gradient.btn-gradient--mode
+						//- a#input-submit(href="mailto:info@market-me.ru" disabled) Связаться со специалистом
+						input#input-submit(type="submit" value="Связаться со специалистом" disabled) 

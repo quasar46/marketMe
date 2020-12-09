@@ -1,0 +1,193 @@
+include modules/head.pug
+body
+	include modules/header.pug
+
+	section.page__container.promotion
+		.global__content
+			h1.global__title.promotion__title Интернет-продвижение
+			.global__lead
+				| Мы помогаем компаниям привлечь новых клиентов из интернета
+			h2.global__h2 Наши услуги:
+		.promotion__services.global__content
+			.promotion__service
+				picture
+					source(srcset="images/pictures/marketing/1mob.jpg" media="(max-width: 700px)")
+					img.promotion__service-image(src="images/pictures/marketing/1.jpg" alt="")
+				//- img.promotion__service-image.global__desktop(src='images/pictures/marketing/promotion-service-01.jpg')
+				//- img.promotion__service-image.global__mobile(src='images/pictures/marketing/promotion-service-01-mobile.jpg')
+				.promotion__service-title Разрабатываем и улучшаем сайты
+			.promotion__service
+				picture
+					source(srcset="images/pictures/marketing/3mob.jpg" media="(max-width: 700px)")
+					img.promotion__service-image(src="images/pictures/marketing/3.jpg" alt="")
+				//- img.promotion__service-image.global__desktop(src='images/pictures/marketing/promotion-service-02.jpg')
+				//- img.promotion__service-image.global__mobile(src='images/pictures/marketing/promotion-service-02-mobile.jpg')
+				.promotion__service-title Размещаем баннерную и контекстную рекламу в Яндексе и Гугле
+			.promotion__service
+				picture
+					source(srcset="images/pictures/marketing/5mob.jpg" media="(max-width: 700px)")
+					img.promotion__service-image(src="images/pictures/marketing/5.jpg" alt="")
+				//- img.promotion__service-image.global__desktop(src='images/pictures/marketing/promotion-service-03.jpg')
+				//- img.promotion__service-image.global__mobile(src='images/pictures/marketing/promotion-service-03-mobile.jpg')
+				.promotion__service-title
+					| Работаем с соцсетями (SMM): создаем и ведем группы, проводим
+					| рекламные кампании
+			.promotion__service
+				picture
+					source(srcset="images/pictures/marketing/4mob.jpg" media="(max-width: 700px)")
+					img.promotion__service-image(src="images/pictures/marketing/4.jpg" alt="")
+				//- img.promotion__service-image.global__desktop(src='images/pictures/marketing/promotion-service-04.jpg')
+				//- img.promotion__service-image.global__mobile(src='images/pictures/marketing/promotion-service-04-mobile.jpg')
+				.promotion__service-title Занимаемся SEO-продвижением
+			.promotion__service
+				picture
+					source(srcset="images/pictures/marketing/5mob.jpg" media="(max-width: 700px)")
+					img.promotion__service-image(src="images/pictures/marketing/5.jpg" alt="")
+				//- img.promotion__service-image.global__desktop(src='images/pictures/marketing/promotion-service-05.jpg')
+				//- img.promotion__service-image.global__mobile(src='images/pictures/marketing/promotion-service-05-mobile.jpg')
+				.promotion__service-title Делаем промостраницы и лэндинги
+		.promotion__advantages
+			.global__content
+				.span1
+				.span2
+				.span3
+				.span4
+				h2.global__highlight Наши преимущества:
+				.promotion__advantages-section
+					.promotion__advantages-col.promotion__advantage-01
+						h3.promotion__advantages-title.global__h2 Системность и последовательность
+						ul.global__ul
+							li Собираем и анализируем данные о компании и конкурентах
+							li Находим нишу, выбираем каналы интернет-продвижения
+							li
+								| Готовим стратегию интернет-продвижения с подробным планом работ по каждому из каналов на
+								| определенный период
+							li Прогнозируем бюджет
+							li Готовим отчеты по каждому этапу работ
+					.promotion__advantages-col.promotion__advantage-02
+						h3.promotion__advantages-title.global__h2 Проектное управление
+						ul.global__ul
+							li Работаем по заранее определенному плану
+							li Держим все процессы под контролем
+							li Измеряем эффективность
+							li Оперативно реагируем на меняющиеся условия рынка или внутренней среды компании
+							li Своевременно корректируем планы в случае необходимости
+				.promotion__advantages-section
+					.promotion__advantages-col.promotion__advantage-03
+						h3.promotion__advantages-title.global__h2 Мы предлагаем комплексный подход
+						| 						По отдельности каждый из каналов интернет-продвижения не является эффективным инструментом
+						| 						стимулирования сбыта. Только их грамотная комбинация приводит к синергетическому эффекту
+						| 						привлечения и удержания клиента.
+					.promotion__advantages-col.promotion__advantage-04
+						h3.promotion__advantages-title.global__h2 Мы работаем в команде
+						| 						Решить задачу по успешному продвижению в интернете возможно, когда за дело берется команда
+						| 						профессионалов во главе с руководителем проекта, который замотивирован на выполнение
+						| 						бизнес-задач клиента
+		.promotion__features.global__content
+			h2.global__highlight Основные каналы интернет-продвижения
+			.promotion__feature.web__feature
+				.presentations__feature-image.web__feature-image
+					picture
+						source(srcset="images/pictures/marketing/kontext_mob.jpg" media="max-width: 500px")
+						img(src="images/pictures/marketing/kontext.jpg" alt="")
+					//- img.global__desktop(src='images/pictures/marketing/promotion-feature-01.jpg')
+					//- img.global__mobile(src='images/pictures/marketing/promotion-feature-01-mobile.jpg')
+					.web__feature-title
+						.web__feature-label
+							| Контекстная реклама
+							.promotion__feature-lowercase Яндекс. Директ и Google AdWords
+				.web__feature-content
+					.promotion__feature-title Что делаем:
+					ul.promotion__feature-ul.global__ul
+						li собираем и группируем запросы для семантического ядра
+						li определяем минус-слова, чтобы не показывать рекламу по нецелевым запросам
+						li создаем рекламные объявления
+						li запускаем рекламные кампании в поисковиках
+						li работаем с тематическими площадками
+						li делаем ретаргетинг
+					.promotion__feature-title Результат:
+					| 					После настройки контекстной рекламы ваше объявление сразу появится в результатах выдачи поисковых
+					| 					систем. Это позволит привлечь готовую к покупкам аудиторию и увеличит продажи в короткий срок.
+			.promotion__feature.web__feature
+				.presentations__feature-image.web__feature-image
+					picture
+						source(srcset="images/pictures/marketing/banner_mob.jpg" media="max-width: 500px")
+						img(src="images/pictures/marketing/banner.jpg" alt="")
+					//- img.global__desktop(src='images/pictures/marketing/banner_mob.jpg')
+					//- img.global__mobile(src='images/pictures/marketing/banner.jpg')
+					.web__feature-title
+						.web__feature-label Баннерная реклама
+				.web__feature-content
+					.promotion__feature-title Что делаем:
+					ul.promotion__feature-ul.global__ul
+						li разрабатываем баннеры по акциям стимулирования сбыта
+						li разрабатываем баннеры по ключевым/дополнительным направлениям
+						li деятельности компании, товарам и услугам
+						li размещаем баннеры в РСЯ (рекламной сети Яндекса) и КМС (контекстно-медийной сети Гугла)
+					.promotion__feature-title Результат:
+					| 					Повышение узнаваемости бренда, увеличение трафика на ваш сайт
+			.promotion__feature.web__feature
+				.presentations__feature-image.web__feature-image
+					picture
+						source(srcset="images/pictures/marketing/seo_mob.jpg" media="max-width: 500px")
+						img(src="images/pictures/marketing/seo.jpg" alt="")
+
+					//- img.global__desktop(src='images/pictures/marketing/seo_mob.jpg')
+					//- img.global__mobile(src='images/pictures/marketing/seo.jpg')
+					.web__feature-title
+						.web__feature-label SEO-продвижение
+				.web__feature-content
+					.promotion__feature-title Вам подходит SEO-продвижение, если:
+					ul.promotion__feature-ul.global__ul
+						li вы продаете товары с длительным сроком жизни
+						li у вашего сайта уже есть поисковый трафик
+						li на вашем сайте трафик уже конвертируется, но вы хотите больше клиентов
+						li вы готовы к тому, что ваш сайт изменится
+						li в сегменте вашего бизнеса есть готовый спрос
+					.promotion__feature-title Что делаем:
+					ul.promotion__feature-ul.global__ul
+						li перерабатываем ссылочную массу
+						li поднимаем позиции в поисковиках
+						li увеличиваем тематический индекс цитирования
+						li определяем полное семантическое ядро
+						li повышаем результаты в органической выдаче
+						li выявляем трафик по каждому целевому запросу
+						li определяем, сколько конкретно пользователей из целевой аудитории
+						li необходимо привести по каждому из запросов
+					.promotion__feature-title Результат:
+					| 					Повышаем результаты в естественной выдаче (без рекламных затрат)
+			.promotion__feature.web__feature
+				.presentations__feature-image.web__feature-image
+					picture
+						source(srcset="images/pictures/marketing/smm_mob.jpg" media="max-width: 500px")
+						img(src="images/pictures/marketing/smm.jpg" alt="")
+					//- img.global__desktop(src='images/pictures/marketing/smm_mob.jpg')
+					//- img.global__mobile(src='images/pictures/marketing/smm.jpg')
+					.web__feature-title
+						.web__feature-label Реклама в социальных сетях
+				.web__feature-content
+					p
+						| Мы работаем со всеми социальными сетями, используя все возможные способы размещения рекламы в
+						| них: органический посев, таргетинг и ретаргетинг.
+					.promotion__feature-title Что делаем:
+					ul.promotion__feature-ul.global__ul
+						li выбираем сегменты аудитории
+						li находим заданные сегменты в соцсетях
+						li готовим сообщения для каждой аудитории
+						li прогнозируем бюджеты, сроки, результаты
+						li создаем, настраиваем и ведем группы в соцсетях
+						li публикуем посты с уникальным контентом
+						li организуем розыгрыши и опросы для привлечения аудитории
+						li создаем брендированную вики-разметку для удобства пользователей (меню группы, товары)
+						li размещаем рекламу в тематических группах для увеличения охвата аудитории
+						li организуем рекламу с лидерами мнений
+					.promotion__feature-title Результат:
+					| 					1. Увеличение лидогенерации
+					br
+					| 					2. Привлечение целевого трафика на сайт
+					br
+					| 					3. Увеличение узнаваемости бренда
+		include modules/request.pug
+		
+	include modules/footer.pug
+	include modules/script.pug

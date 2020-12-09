@@ -1,39 +1,42 @@
 .modal#popup1
-	.modal-order__close#closebutton
 	.modal-order
 
 		h2.title Оставьте заявку на бесплатную 30-минутную онлайн консультацию
 		.modal-order__form
 			.modal-order__form-inputs
-				label(for="")
+				label
 					span Ваше имя*
-					input(type="text")
-				label(for="")
+					input#input-name(type="text" onkeyup="checkParams2()")
+				label
 					span Сфера деятельности*
-					input(type="text")
+					input#input-sfera(type="text" onkeyup="checkParams2()")
 
 				.modal-order__form-social.on-mobile
 					p Пожелния к способу связи
 					ul
 						li
-							a(href="" style="background-image:url('images/svg/social/icon1.svg')")
+							a(style="background-image:url('images/svg/social/icon1.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon2.svg')")
+							a(style="background-image:url('images/svg/social/icon2.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon3.svg')")
+							a(style="background-image:url('images/svg/social/icon3.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon4.svg')")
+							a(style="background-image:url('images/svg/social/icon4.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon5.svg')")
+							a(style="background-image:url('images/svg/social/icon5.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon6.svg')")
+							a(style="background-image:url('images/svg/social/icon6.svg')")
 
-				label(for="")
+				label
 					span Ваш телефон*
-					input(type="text")
-				label(for="")
+					input#input-tel(type="text" onkeyup="checkParams2()")
+				label
 					span Удобное для звонка время*
-					input(type="text")
+					.modal-order__form-time
+						button.arrow-top.increase
+						input(type="any" value="11:00" min="1" max="24" step="0.1")
+						button.arrow-down.decrease
+
 
 			.modal-order__form-bottom
 
@@ -41,20 +44,21 @@
 					p Пожелания к способу связи
 					ul
 						li
-							a(href="" style="background-image:url('images/svg/social/icon1.svg')")
+							a(style="background-image:url('images/svg/social/icon1.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon2.svg')")
+							a(style="background-image:url('images/svg/social/icon2.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon3.svg')")
+							a(style="background-image:url('images/svg/social/icon3.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon4.svg')")
+							a(style="background-image:url('images/svg/social/icon4.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon5.svg')")
+							a(style="background-image:url('images/svg/social/icon5.svg')")
 						li
-							a(href="" style="background-image:url('images/svg/social/icon6.svg')")
+							a(style="background-image:url('images/svg/social/icon6.svg')")
 				.complex-request__consent
-					input(type="checkbox" id="consent")
-					label(for="consent") Я даю согласие на обработку персональных данных и соглашаюсь с <a href="politica.pdf">политикой конфиденциальности</a>
+					input(type="checkbox" id="consent" onkeyup="checkParams2()")
+					label(for="consent") Я даю согласие на обработку персональных данных и соглашаюсь с <a href="politica.pdf" target="_blank">  политикой конфиденциальности</a>
 
 			.btn-wrapper
-				a.btn-gradient Отправить заявку
+				.btn-gradient.btn-gradient--mode
+					input#input-submit(type="submit" value="Оставить заявку" disabled)

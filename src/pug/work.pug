@@ -1,119 +1,136 @@
-doctype html
-html(lang="ru")
-	head
-		include modules/head.pug
-	body
-		.content
-			include modules/header.pug
-
-			main
-
-				section.work
-					// work advantages
-					.work-advantages
-						.container
-							h1.title Как мы работаем
-							p MarketMe - компания, в которой любят свою работу
-							h2.title НАШИ ПРЕИМУЩЕСТВА
-							ul
-								li
-									img(src="images/svg/numbers/1.svg" alt="")
-									span Многолетний опыт в сфере маркетинга и менеджмента международного уровня 
-								li
-									img(src="images/svg/numbers/2.svg" alt="")
-									span Специализация на B2B сегменте, услугах, технологически сложных продуктах и товарах с длительным принятием решения о покупке
-								li
-									img(src="images/svg/numbers/3.svg" alt="")
-									span Знание конъюнктуры рынка, отслеживание трендов и быстрая реакция на их изменения
-								li
-									img(src="images/svg/numbers/4.svg" alt="")
-									span Использование новых эффективных инструментов маркетинга и собственных ноу-хау 
-								li
-									img(src="images/svg/numbers/5.svg" alt="")
-									span Слаженная команда специалистов из разных областей, работающая по принципу проектного управления
-								li
-									img(src="images/svg/numbers/6.svg" alt="")
-									span Ориентация на цели и бизнес-результат клиента
-
-					// work areas
-					.work-areas
-						h2.title СФЕРЫ, С КОТОРЫМИ МЫ РАБОТАЕМ
+include modules/head.pug
+body
+	.content
+		include modules/header.pug
+		
+		main
+			section.work
+				// work advantages
+				.work-advantages
+					.container
+						h1.title Как мы работаем
+						p.subtitle MarketMe - компания, в которой любят свою работу
+						h2.title НАШИ ПРЕИМУЩЕСТВА
 						ul
 							li
-								img(src="images/pictures/work/1.jpg" alt="")
-								p Строительство и проектирование
+								img(src='images/svg/numbers/1.svg', alt='')
+								span
+									| Многолетний опыт в сфере маркетинга и
+									| менеджмента международного уровня
 							li
-								img(src="images/pictures/work/2.jpg" alt="")
-								p IT-технологии и телекоммуникации
+								img(src='images/svg/numbers/2.svg', alt='')
+								span
+									| Специализация на B2B сегменте, услугах,
+									| технологически сложных продуктах и товарах с длительным принятием решения о
+									| покупке
 							li
-								img(src="images/pictures/work/3.jpg" alt="")
-								p Промышленное производство
+								img(src='images/svg/numbers/3.svg', alt='')
+								span
+									| Знание конъюнктуры рынка, отслеживание
+									| трендов и быстрая реакция на их изменения
 							li
-								img(src="images/pictures/work/4.jpg" alt="")
-								p Сложное технологическое оборудование
+								img(src='images/svg/numbers/4.svg', alt='')
+								span
+									| Использование новых эффективных
+									| инструментов маркетинга и собственных ноу-хау
 							li
-								img(src="images/pictures/work/5.jpg" alt="")
-								p Медицинские продукты и оборудование
+								img(src='images/svg/numbers/5.svg', alt='')
+								span
+									| Слаженная команда специалистов из
+									| разных областей, работающая по принципу проектного управления
 							li
-								img(src="images/pictures/work/6.jpg" alt="")
-								p Логистические услуги
-							li
-								img(src="images/pictures/work/7.jpg" alt="")
-								p Start-up проекты
-
-					// work principles
-					.work-principles
-						h2.title ЦЕННОСТИ И ПРИНЦИПЫ КОМПАНИИ
-						ul
-							li
-								img(src="images/pictures/work/princip/1.jpg" alt="")
-								.col
-									h3 Дважды два не равно четыре 
-									p Специалисты, отвечающие за разные задачи и сегменты работы, постоянно находятся в синергии друг с другом, поэтому общий результат превосходит сумму вложений в проект каждого отдела
-							li
-								img(src="images/pictures/work/princip/2.jpg" alt="")
-								.col
-									h3 Честны, потому что болеем за результат
-									p Наши аналитики проводят полный аудит вашего бизнеса и показывают, что эффективно, а что нет и не приведет к ожидаемому результату, тем самым экономя ваши деньги!
-							li
-								img(src="images/pictures/work/princip/3.jpg" alt="")
-								.col
-									h3 Любим и заботимся не только о нашем, но и о вашем клиенте
-									p Возросшая конверсия, увеличение life time value, частоты повторных обращений, цитируемости, положительной обратной связи от ваших клиентов во всех точках продаж, увеличение среднего чека, снижение стоимости привлечения клиента и самое важное - прибыли! Только это показатели результата для специалистов MarketMe
-							li
-								img(src="images/pictures/work/princip/4.jpg" alt="")
-								.col
-									h3 Не учим курицу
-									p Никто не знает ваш бизнес лучше вас. Задавая вам вопросы, мы увидим продукт вашими глазами и направим весь свой опыт и вдохновение, чтобы реализовать ваше видение в полной мере и донести до будущего потребителя его ценность и исключительность
-							li
-								img(src="images/pictures/work/princip/5.jpg" alt="")
-								.col
-									h3 Цель первичнее творчества
-									p Деньги, деньги и еще раз деньги! Любой бизнес создают для того, чтобы зарабатывать! MarketMe это как раз про деньги! Меньше слов и красивых графиков - больше конкретных действий!
-							li
-								img(src="images/pictures/work/princip/6.jpg" alt="")
-								.col
-									h3 Используем весь оркестр
-									p Отсутствие сильного дирижера и нескольких инструментов сильно ухудшает общее звучание музыкальной композиции. Со специалистами MarketMe музыка вашего бизнеса будет звучать идеально!
-
-					// work diplomas
-					.work-diplomas
-						h2.title Дипломы
-						ul
-							li
-								a(href="images/pictures/work/diploms/1.jpg" data-fancybox="diploms")
-									img(src="images/pictures/work/diploms/1.jpg", alt="")
-
-							li
-								a(href="images/pictures/work/diploms/2.jpg" data-fancybox="diploms")
-									img(src="images/pictures/work/diploms/2.jpg", alt="")
-						.btn-wrapper
-							a.btn-gradient(href="guide.html") Посмотреть СМИ о нас
-
-
-
-
-
-		include modules/footer.pug
-		//- include modules/menu-mobile.pug
-		include modules/script.pug
+								img(src='images/svg/numbers/6.svg', alt='')
+								span
+									| Ориентация на цели и бизнес-результат
+									| клиента
+				// work areas
+				.work-areas
+					h2.title СФЕРЫ, С КОТОРЫМИ МЫ РАБОТАЕМ
+					ul
+						li
+							img(src='images/pictures/work/1.jpg', alt='')
+							p Строительство и проектирование
+						li
+							img(src='images/pictures/work/2.jpg', alt='')
+							p IT-технологии и телекоммуникации
+						li
+							img(src='images/pictures/work/3.jpg', alt='')
+							p Промышленное производство
+						li
+							img(src='images/pictures/work/4.jpg', alt='')
+							p Сложное технологическое оборудование
+						li
+							img(src='images/pictures/work/5.jpg', alt='')
+							p Медицинские продукты и оборудование
+						li
+							img(src='images/pictures/work/6.jpg', alt='')
+							p Логистические услуги
+						li
+							img(src='images/pictures/work/7.jpg', alt='')
+							p Start-up проекты
+				// work principles
+				.work-principles
+					h2.title ЦЕННОСТИ И ПРИНЦИПЫ КОМПАНИИ
+					ul
+						li
+							img(src='images/pictures/work/princip/1.jpg', alt='')
+							.col
+								h3 Дважды два не равно четыре 
+								p
+									| Специалисты, отвечающие за разные задачи и сегменты работы, постоянно находятся в
+									| синергии друг с другом, поэтому общий результат превосходит сумму вложений в проект
+									| каждого отдела
+						li
+							img(src='images/pictures/work/princip/2.jpg', alt='')
+							.col
+								h3 Честны, потому что болеем за результат
+								p
+									| Наши аналитики проводят полный аудит вашего бизнеса и показывают, что эффективно, а
+									| что нет и не приведет к ожидаемому результату, тем самым экономя ваши деньги!
+						li
+							img(src='images/pictures/work/princip/3.jpg', alt='')
+							.col
+								h3 Любим и заботимся не только о нашем, но и о вашем клиенте
+								p
+									| Возросшая конверсия, увеличение life time value, частоты повторных обращений,
+									| цитируемости, положительной обратной связи от ваших клиентов во всех точках продаж,
+									| увеличение среднего чека, снижение стоимости привлечения клиента и самое важное -
+									| прибыли! Только это показатели результата для специалистов MarketMe
+						li
+							img(src='images/pictures/work/princip/4.jpg', alt='')
+							.col
+								h3 Не учим курицу
+								p
+									| Никто не знает ваш бизнес лучше вас. Задавая вам вопросы, мы увидим продукт вашими
+									| глазами и направим весь свой опыт и вдохновение, чтобы реализовать ваше видение в
+									| полной мере и донести до будущего потребителя его ценность и исключительность
+						li
+							img(src='images/pictures/work/princip/5.jpg', alt='')
+							.col
+								h3 Цель первичнее творчества
+								p
+									| Деньги, деньги и еще раз деньги! Любой бизнес создают для того, чтобы зарабатывать!
+									| MarketMe это как раз про деньги! Меньше слов и красивых графиков - больше конкретных
+									| действий!
+						li
+							img(src='images/pictures/work/princip/6.jpg', alt='')
+							.col
+								h3 Используем весь оркестр
+								p
+									| Отсутствие сильного дирижера и нескольких инструментов сильно ухудшает общее звучание
+									| музыкальной композиции. Со специалистами MarketMe музыка вашего бизнеса будет
+									| звучать идеально!
+				// work diplomas
+				.work-diplomas
+					h2.title Грамоты
+					ul
+						li
+							a(href='images/pictures/work/diploms/1.jpg', data-fancybox='diploms')
+								img(src='images/pictures/work/diploms/1.jpg', alt='')
+						li
+							a(href='images/pictures/work/diploms/2.jpg', data-fancybox='diploms')
+								img(src='images/pictures/work/diploms/2.jpg', alt='')
+					.btn-wrapper
+						a.btn-gradient(href='guide.html') Посмотреть СМИ о нас
+	include modules/footer.pug
+	include modules/script.pug

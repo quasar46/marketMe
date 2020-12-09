@@ -4,90 +4,112 @@ header
 		.header
 			// header logo
 			.header__logo
-				a(href="index.html")
-					img(src="images/svg/logo.svg" alt="")
+				a(href='index.html')
+					img(src='images/svg/logo.svg' alt='')
 			// header menu
-			nav(role="navigation")
+			nav(role='navigation')
 				ul.header-menu
 					li
-						a(href="") О нас
+						a О нас
 						ul.submenu
 							li
-								a(href="work.html") Как мы работаем
+								a(href='work.html') Как мы работаем
 							li
-								a(href="duide.html") Руководство и СМИ
+								a(href='guide.html') Руководство и СМИ
 					li
-						a(href="") Портфолио
+						a(href='portfolio.html') Портфолио
 					li
-						a(href="") Услуги
+						a Услуги
 						ul.submenu
 							li
-								a(href="complex.html") Комплексный подход
+								a(href='complex.html') Комплексный подход
 							li
-								a(href="") Стратегический маркетинг. <br> Брендинг
+								a(href='branding.html')
+									| Стратегический маркетинг. 
+									br
+									|  Брендинг
 							li
-								a(href="design.html") Дизайн
+								a(href='design.html') Дизайн
 							li
-								a(href="") Создание презентаций
+								a(href='presentations.html') Создание презентаций
 							li
-								a(href="") Разработка сайтов
+								a(href='development.html') Разработка сайтов
 							li
-								a(href="") Интернет-продвижение
+								a(href='marketing.html') Интернет-продвижение
 							li
-								a(href="context.html") Контекстная реклама
-
+								a(href='context.html') Контекстная реклама
 					li
-						a(href="contacts.html") Контакты
+						a(href="") Комплексный аудит IT-инфраструктуры
+					li
+						a(href='contacts.html') Контакты
 			// header contacts
 			ul.header__contacts
 				li
-					a(href="tel:+78003022728") 8 800 302 27 28
+					a(href='tel:+78003022728') 8 800 302 27 28
 					span (бесплатно по России)
 				li
-					a(href="+78129091413") +7 812 909 14 13
+					a(href='tel:+78129091413') +7 812 909 14 13
 				li
-					a(href="mailto:info@market-me.ru") info@market-me.ru
-
+					a(href='mailto:info@market-me.ru') info@market-me.ru
+			.header__phone.header__phone--mobile
+				img(src="images/svg/tell-gradient.svg" alt="")
 			.burger
-
-
 			// mobile menu
 			.mobile-menu
 				.mobile-menu__wrapper
 					ul
 						li
-							a(href="work.html") Как мы работаем
+							a(href='work.html') Как мы работаем
 						li
-							a(href="guide.html") Руководство и СМИ
+							a(href='guide.html') Руководство и СМИ
 						li
-							a(href="") Портфолио
+							a(href='portfolio.html') Портфолио
 						li
-							a(href="complex.html") Комплексный подход
+							a(href='complex.html') Комплексный подход
 						li
-							a(href="") Стратегический маркетинг. Брендинг
+							a(href='branding.html') Стратегический маркетинг. Брендинг
 						li
-							a(href="design.html") Дизайн
+							a(href='design.html') Дизайн
 						li
-							a(href="") Создание презентаций
+							a(href='presentations.html') Создание презентаций
 						li
-							a(href="") Разработка сайтов
+							a(href='development.html') Разработка сайтов
 						li
-							a(href="") Интернет-продвижение
+							a(href='marketing.html') Интернет-продвижение
 						li
-							a(href="context.html") Контекстная реклама
+							a(href='context.html') Контекстная реклама
 						li
-							a(href="contacts.html") Конакты
-
+							a(href='contacts.html') Контакты
 					ul
 						li
-							a(href="tel:+78003022728") 
+							a(href='tel:+78003022728')
 								span 8 800 302 27 28
-								span (бесплатно по России)
+								span
+									| (бесплатно по
+									| России)
 						li
-							a(href="tel:78003022728")
-								span 8 800 302 27 28
+							a(href='tel:+78129091413')
+								span +7 812 909 14 13
 						li
-							a(href="mailto:info@market-me.ru") 
+							a(href='mailto:info@market-me.ru')
 								span info@market-me.ru
-
 	.header__gradient
+
+	//- popup
+	#popup-mobile
+		.popup__wrapper
+			.close
+			.btn-wrapper
+				.btn-gradient.btn-gradient--mode
+					a(href="tel:88003022728") Позвонить
+			.btn-wrapper
+				.btn-gradient.btn-gradient--mode
+					a(href="https://api.whatsapp.com/send?phone=79219091413") Написать в WhatsApp
+			h2 Перезвоните мне
+			form(action="get")
+				input(type="text" placeholder="Ваше имя")
+				input(type="text" placeholder="Ваш телефон")
+
+			.btn-wrapper
+				.btn-gradient.btn-gradient--mode
+					a(href="mailto:info@market-me.ru") Отправить заявку

@@ -1,0 +1,218 @@
+@font-face {
+	font-family: "Proxima Nova Light";
+	src: url(proxima_nova_light.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Regular";
+	src: url(proxima_nova_regular.woff2.html) format("woff2"),
+		url(proxima_nova_regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Palatino Linotype";
+	src: url(palatino_linotype.woff2.html) format("woff2"), url(palatino_linotype.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Bl";
+	src: url(proxima/ProximaNova-Black.eot);
+	src: local("Proxima Nova Black"), local("ProximaNova-Black"),
+		url(proxima/ProximaNova-Black.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-Black.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-Black.woff) format("woff"),
+		url(proxima/ProximaNova-Black.ttf) format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Th";
+	src: url(proxima/ProximaNova-Extrabld.eot);
+	src: local("Proxima Nova Extrabold"), local("ProximaNova-Extrabld"),
+		url(proxima/ProximaNova-Extrabld.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-Extrabld.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-Extrabld.woff) format("woff"),
+		url(proxima/ProximaNova-Extrabld.ttf) format("truetype");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Lt";
+	src: url(proxima/ProximaNova-SemiboldIt.eot);
+	src: local("Proxima Nova Semibold Italic"), local("ProximaNova-SemiboldIt"),
+		url(proxima/ProximaNova-SemiboldIt.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-SemiboldIt.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-SemiboldIt.woff) format("woff"),
+		url(proxima/ProximaNova-SemiboldIt.ttf) format("truetype");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Proxima Nova Th";
+	src: url(proxima/ProximaNovaT-Thin.eot);
+	src: local("Proxima Nova Thin"), local("ProximaNovaT-Thin"),
+		url(proxima/ProximaNovaT-Thin.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNovaT-Thin.woff2.html) format("woff2"),
+		url(proxima/ProximaNovaT-Thin.woff) format("woff"),
+		url(proxima/ProximaNovaT-Thin.ttf) format("truetype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Lt";
+	src: url(proxima/ProximaNova-Light.eot);
+	src: local("Proxima Nova Light"), local("ProximaNova-Light"),
+		url(proxima/ProximaNova-Light.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-Light.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-Light.woff) format("woff"),
+		url(proxima/ProximaNova-Light.ttf) format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Bl";
+	src: url(proxima/ProximaNova-BlackIt.eot);
+	src: local("Proxima Nova Black Italic"), local("ProximaNova-BlackIt"),
+		url(proxima/ProximaNova-BlackIt.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-BlackIt.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-BlackIt.woff) format("woff"),
+		url(proxima/ProximaNova-BlackIt.ttf) format("truetype");
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url(proxima/ProximaNova-BoldIt.eot);
+	src: local("Proxima Nova Bold Italic"), local("ProximaNova-BoldIt"),
+		url(proxima/ProximaNova-BoldIt.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-BoldIt.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-BoldIt.woff) format("woff"),
+		url(proxima/ProximaNova-BoldIt.ttf) format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Proxima Nova Th";
+	src: url(proxima/ProximaNova-ThinIt.eot);
+	src: local("Proxima Nova Thin Italic"), local("ProximaNova-ThinIt"),
+		url(proxima/ProximaNova-ThinIt.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-ThinIt.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-ThinIt.woff) format("woff"),
+		url(proxima/ProximaNova-ThinIt.ttf) format("truetype");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url(proxima/ProximaNova-Bold.eot);
+	src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
+		url(proxima/ProximaNova-Bold.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-Bold.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-Bold.woff) format("woff"),
+		url(proxima/ProximaNova-Bold.ttf) format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url(proxima/ProximaNova-RegularIt.eot);
+	src: local("Proxima Nova Regular Italic"), local("ProximaNova-RegularIt"),
+		url(proxima/ProximaNova-RegularIt.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-RegularIt.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-RegularIt.woff) format("woff"),
+		url(proxima/ProximaNova-RegularIt.ttf) format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Proxima Nova Th";
+	src: url(proxima/ProximaNova-ExtrabldIt.eot);
+	src: local("Proxima Nova Extrabold Italic"), local("ProximaNova-ExtrabldIt"),
+		url(proxima/ProximaNova-ExtrabldIt.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-ExtrabldIt.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-ExtrabldIt.woff) format("woff"),
+		url(proxima/ProximaNova-ExtrabldIt.ttf) format("truetype");
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url(proxima/ProximaNova-Regular.eot);
+	src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+		url(proxima/ProximaNova-Regular.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-Regular.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-Regular.woff) format("woff"),
+		url(proxima/ProximaNova-Regular.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Lt";
+	src: url(proxima/ProximaNova-LightIt.eot);
+	src: local("Proxima Nova Light Italic"), local("ProximaNova-LightIt"),
+		url(proxima/ProximaNova-LightIt.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-LightIt.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-LightIt.woff) format("woff"),
+		url(proxima/ProximaNova-LightIt.ttf) format("truetype");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Proxima Nova Lt";
+	src: url(proxima/ProximaNova-Semibold.eot);
+	src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"),
+		url(proxima/ProximaNova-Semibold.eot@) format("embedded-opentype"),
+		url(proxima/ProximaNova-Semibold.woff2.html) format("woff2"),
+		url(proxima/ProximaNova-Semibold.woff) format("woff"),
+		url(proxima/ProximaNova-Semibold.ttf) format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PT Serif";
+	src: local("PT Serif"), local("PTSerif-Regular"), url("ptserif.woff2") format("woff2"),
+		url("ptserif.woff") format("woff"), url("ptserif.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PT Serif";
+	src: local("PT Serif Italic"), local("PTSerif-Italic"), url("ptserifitalic.woff2") format("woff2"),
+		url("ptserifitalic.woff") format("woff"), url("ptserifitalic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: "PT Serif";
+	src: local("PT Serif Bold"), local("PTSerif-Bold"), url("ptserifbold.woff2") format("woff2"),
+		url("ptserifbold.woff") format("woff"), url("ptserifbold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PT Serif";
+	src: local("PT Serif Bold Italic"), local("PTSerif-BoldItalic"), url("ptserifbolditalic.woff2") format("woff2"),
+		url("ptserifbolditalic.woff") format("woff"), url("ptserifbolditalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
